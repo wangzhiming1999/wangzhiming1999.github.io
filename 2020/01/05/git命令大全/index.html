@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>git命令大全 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##第一章 主要使用的几个git initgit commit -m ‘描述’git statusgit add . &#x2F;&#x2F;把本地的修改加到本地仓库中git pull &#x2F;&#x2F;把远程库的代码更新到工作台git push &#x2F;&#x2F;把本地库的修改提交到远程库中git branch  &#x2F;&#x2F;查看当前分支git checkout -b test &#x2F;&#x2F;新建test分支git merge master &#x2F;&#x2F;假设当前在te">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git命令大全">
+<meta property="og:url" content="http://yoursite.com/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##第一章 主要使用的几个git initgit commit -m ‘描述’git statusgit add . &#x2F;&#x2F;把本地的修改加到本地仓库中git pull &#x2F;&#x2F;把远程库的代码更新到工作台git push &#x2F;&#x2F;把本地库的修改提交到远程库中git branch  &#x2F;&#x2F;查看当前分支git checkout -b test &#x2F;&#x2F;新建test分支git merge master &#x2F;&#x2F;假设当前在te">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-05T09:16:25.000Z">
+<meta property="article:modified_time" content="2020-01-05T09:23:05.947Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git命令大全" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" class="article-date">
+  <time datetime="2020-01-05T09:16:25.000Z" itemprop="datePublished">2020-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git命令大全
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##第一章 主要使用的几个<br>git init<br>git commit -m ‘描述’<br>git status<br>git add . //把本地的修改加到本地仓库中<br>git pull //把远程库的代码更新到工作台<br>git push //把本地库的修改提交到远程库中<br>git branch  //查看当前分支<br>git checkout -b test //新建test分支<br>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上<br>git checkout master/branch //切换到某个分支</p>
+<hr>
+<p>##第二章 所有的git命令<br>git add .<br>git commit -m “add files”<br>git status<br>git init //初始化本地git环境<br>git clone XXX//克隆一份代码到本地仓库<br>git pull //把远程库的代码更新到工作台<br>git pull –rebase origin master //强制把远程库的代码跟新到当前分支上面<br>git fetch //把远程库的代码更新到本地库<br>git add . //把本地的修改加到stage中<br>git commit -m ‘comments here’ //把stage中的修改提交到本地库<br>git push //把本地库的修改提交到远程库中<br>git branch -r/-a //查看远程分支/全部分支<br>git checkout master/branch //切换到某个分支<br>git checkout -b test //新建test分支<br>git checkout -d test //删除test分支<br>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上<br>git merge tool //调用merge工具<br>git stash //把未完成的修改缓存到栈容器中<br>git stash list //查看所有的缓存<br>git stash pop //恢复本地分支到缓存状态<br>git blame someFile //查看某个文件的每一行的修改记录（）谁在什么时候修改的）<br>git status //查看当前分支有哪些修改<br>git log //查看当前分支上面的日志信息<br>git diff //查看当前没有add的内容<br>git diff –cache //查看已经add但是没有commit的内容<br>git diff HEAD //上面两个内容的合并<br>git reset –hard HEAD //撤销本地修改<br>echo $HOME //查看git config的HOME路径<br>export $HOME=/c/gitconfig //配置git config的HOME路径<br>团队协作git操作流程：</p>
+<p>克隆一个全新的项目，完成新功能并且提交：<br>git clone XXX //克隆代码库<br>git checkout -b test //新建分支<br>modify some files //完成修改<br>git add . //把修改加入stage中<br>git commit -m ‘’ //提交修改到test分支<br>review代码<br>git checkout master //切换到master分支<br>git pull //更新代码<br>git checkout test //切换到test分支<br>git meger master //把master分支的代码merge到test分支<br>git push origin 分支名//把test分支的代码push到远程库<br>目前正在test分支上面开发某个功能，但是没有完成。突然一个紧急的bug需要处理<br>git add .<br>git stash<br>git checkout bugFixBranch<br>git pull –rebase origin master<br>fix the bug<br>git add .<br>git commit -m ‘’<br>git push<br>git checkout test<br>git stash pop<br>continue new feature’s development</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" data-id="ck50t72lh0000wkeq941v22vm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">git命令大全</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/05/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
