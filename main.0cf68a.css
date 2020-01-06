@@ -4301,6 +4301,10 @@ category-all-page {
   .category-all-page h2 {
     margin: 20px 0;
   }
+  .profilepic .js-avatar{
+    height: 100%;
+    width: 100%;
+  }
   .category-all-page .category-all-title {
     text-align: center;
   }
