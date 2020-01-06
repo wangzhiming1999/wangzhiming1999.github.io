@@ -6,12 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wangzhiming1999.github.io">
-  <title>小小明</title>
+  <title>文章分类 | 小小明</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="小小明">
-<meta property="og:url" content="http://wangzhiming1999.github.io/index.html">
+<meta property="og:title" content="文章分类">
+<meta property="og:url" content="http://wangzhiming1999.github.io/categories/index.html">
 <meta property="og:site_name" content="小小明">
+<meta property="article:published_time" content="2018-06-11T02:13:21.000Z">
+<meta property="article:modified_time" content="2020-01-06T05:59:27.299Z">
 <meta property="article:author" content="王志明">
 <meta name="twitter:card" content="summary">
   
@@ -163,40 +165,69 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-git命令大全" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">git命令大全</a>
+    <h1 class="article-title" itemprop="name">
+      文章分类
     </h1>
   
 
   
-  <a href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" class="archive-article-date">
-  	<time datetime="2020-01-05T09:16:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-05</time>
+  <a href="/categories/index.html" class="archive-article-date">
+  	<time datetime="2018-06-11T02:13:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-11</time>
 </a>
   
 
 
+  
+  <span class="archive-article-date">
+    阅读量 <span id="busuanzi_value_page_pv"></span>
+  </span>
   
   </header>
 
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>##第一章 主要使用的几个<br>git init<br>git commit -m ‘描述’<br>git status<br>git add . //把本地的修改加到本地仓库中<br>git pull //把远程库的代码更新到工作台<br>git push //把本地库的修改提交到远程库中<br>git branch  //查看当前分支<br>git checkout -b test //新建test分支<br>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上<br>git checkout master/branch //切换到某个分支</p>
-<hr>
-<p>##第二章 所有的git命令<br>git add .<br>git commit -m “add files”<br>git status<br>git init //初始化本地git环境<br>git clone XXX//克隆一份代码到本地仓库<br>git pull //把远程库的代码更新到工作台<br>git pull –rebase origin master //强制把远程库的代码跟新到当前分支上面<br>git fetch //把远程库的代码更新到本地库<br>git add . //把本地的修改加到stage中<br>git commit -m ‘comments here’ //把stage中的修改提交到本地库<br>git push //把本地库的修改提交到远程库中<br>git branch -r/-a //查看远程分支/全部分支<br>git checkout master/branch //切换到某个分支<br>git checkout -b test //新建test分支<br>git checkout -d test //删除test分支<br>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上<br>git merge tool //调用merge工具<br>git stash //把未完成的修改缓存到栈容器中<br>git stash list //查看所有的缓存<br>git stash pop //恢复本地分支到缓存状态<br>git blame someFile //查看某个文件的每一行的修改记录（）谁在什么时候修改的）<br>git status //查看当前分支有哪些修改<br>git log //查看当前分支上面的日志信息<br>git diff //查看当前没有add的内容<br>git diff –cache //查看已经add但是没有commit的内容<br>git diff HEAD //上面两个内容的合并<br>git reset –hard HEAD //撤销本地修改<br>echo $HOME //查看git config的HOME路径<br>export $HOME=/c/gitconfig //配置git config的HOME路径<br>团队协作git操作流程：</p>
-<p>克隆一个全新的项目，完成新功能并且提交：<br>git clone XXX //克隆代码库<br>git checkout -b test //新建分支<br>modify some files //完成修改<br>git add . //把修改加入stage中<br>git commit -m ‘’ //提交修改到test分支<br>review代码<br>git checkout master //切换到master分支<br>git pull //更新代码<br>git checkout test //切换到test分支<br>git meger master //把master分支的代码merge到test分支<br>git push origin 分支名//把test分支的代码push到远程库<br>目前正在test分支上面开发某个功能，但是没有完成。突然一个紧急的bug需要处理<br>git add .<br>git stash<br>git checkout bugFixBranch<br>git pull –rebase origin master<br>fix the bug<br>git add .<br>git commit -m ‘’<br>git push<br>git checkout test<br>git stash pop<br>continue new feature’s development</p>
-<hr>
-
+    
     
 
+    
+    <div class="page-reward">
+      <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/ali.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
     
   </div>
   <div class="article-info article-info-index">
@@ -205,16 +236,65 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">展开全文 >></a>
-    </p>
-    
 
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wangzhiming1999.github.io/categories/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -233,89 +313,6 @@
 </aside>
 
 
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-  
-  <a href="/2020/01/05/hello-world/" class="archive-article-date">
-  	<time datetime="2020-01-05T09:08:56.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-05</time>
-</a>
-  
-
-
-  
-  </header>
-
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-    
-
-    
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/05/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -367,7 +364,7 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
