@@ -4304,6 +4304,7 @@ category-all-page {
   .profilepic .js-avatar{
     height: 100%;
     width: 100%;
+    border-radius: 50%;
   }
   .category-all-page .category-all-title {
     text-align: center;

