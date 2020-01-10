@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wangzhiming1999.github.io">
-  <title>linux命令总结 | 小小明</title>
+  <title>&#39;js高级进阶笔记&#39; | 小小明</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LINUX      gcc 编译器      gcc [options] [filenames]       -c只编译不连接，生成目标文件“.o”       -S:只编译汇编，生成汇编代码       -E:只进行预编译，不做其他处理       -g:在可执行程序中包含标准试调信息       -o file:指定输出文件       -v:打印出编译器内部编译各过程的命令行信息和编译器的">
+  <meta name="description" content="一、正则表达式及JavaScript实现（一）正则表达式1、正则表达式的组成​        正则表达式，由普通字符，和特殊字符组成。用来声明一个特定结构的字符串。然后在一个字符串中，对该正则表达式进行匹配，从而查找是否存在子字符串。 ​        正则表达式的普通字符，就是普通的字母、中文、数字等。特殊字符是有特殊能力的字符，例如. 代表一个任意的数字、字母、或者下划线  。 2、正则表达式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux命令总结">
-<meta property="og:url" content="http://wangzhiming1999.github.io/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="&#39;js高级进阶笔记&#39;">
+<meta property="og:url" content="http://wangzhiming1999.github.io/2020/01/10/js%E9%AB%98%E7%BA%A7%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="小小明">
-<meta property="og:description" content="LINUX      gcc 编译器      gcc [options] [filenames]       -c只编译不连接，生成目标文件“.o”       -S:只编译汇编，生成汇编代码       -E:只进行预编译，不做其他处理       -g:在可执行程序中包含标准试调信息       -o file:指定输出文件       -v:打印出编译器内部编译各过程的命令行信息和编译器的">
-<meta property="article:published_time" content="2020-01-07T04:19:42.000Z">
-<meta property="article:modified_time" content="2020-01-07T04:19:54.351Z">
+<meta property="og:description" content="一、正则表达式及JavaScript实现（一）正则表达式1、正则表达式的组成​        正则表达式，由普通字符，和特殊字符组成。用来声明一个特定结构的字符串。然后在一个字符串中，对该正则表达式进行匹配，从而查找是否存在子字符串。 ​        正则表达式的普通字符，就是普通的字母、中文、数字等。特殊字符是有特殊能力的字符，例如. 代表一个任意的数字、字母、或者下划线  。 2、正则表达式">
+<meta property="og:image" content="c:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C%E5%87%BD%E6%95%B0%E4%BD%9C%E7%94%A8%E5%9F%9F.png">
+<meta property="og:image" content="c:%5CUsers%5Cweb%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564619835708.png">
+<meta property="og:image" content="c:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0-%E7%BB%A7%E6%89%BF-%E5%8E%9F%E5%9E%8B%E9%93%BE.png">
+<meta property="og:image" content="c:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C05%5C%E8%AE%BF%E9%97%AE%E5%99%A8%E5%B1%9E%E6%80%A7.png">
+<meta property="article:published_time" content="2020-01-10T04:38:27.000Z">
+<meta property="article:modified_time" content="2020-01-10T04:39:18.466Z">
 <meta property="article:author" content="王志明">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C%E5%87%BD%E6%95%B0%E4%BD%9C%E7%94%A8%E5%9F%9F.png">
   
     <link rel="alternative" href="/atom.xml" title="小小明" type="application/atom+xml">
   
@@ -167,20 +172,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux命令总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-js高级进阶笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      linux命令总结
+      &#39;js高级进阶笔记&#39;
     </h1>
   
 
   
-  <a href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-01-07T04:19:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
+  <a href="/2020/01/10/js%E9%AB%98%E7%BA%A7%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-01-10T04:38:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-10</time>
 </a>
   
 
@@ -195,456 +200,259 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <pre><code>LINUX</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   gcc 编译器</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>  gcc [options] [filenames]<br>       -c只编译不连接，生成目标文件“.o”<br>       -S:只编译汇编，生成汇编代码<br>       -E:只进行预编译，不做其他处理<br>       -g:在可执行程序中包含标准试调信息<br>       -o file:指定输出文件<br>       -v:打印出编译器内部编译各过程的命令行信息和编译器的版本<br>       -std=name:指定C语言的标准（如C89 C90 C99等）<br>       -l dir:在头文件的搜索路径列表中添加dir目录<br>       -ansi:支持符合ANSI标准的C程序<br>       -pedantic:允许发出ANSI C标准所列的全部错误信息<br>       -w:关闭所有警告<br>       -Wall:允许发出gcc所提供的所有用的报警信息<br>       -L dir:在库文件的搜索路径列表中添加dir目录<br>       -static:链接静态库<br>       -lname:链接名为name的库文件<br>       -shared:表明是使用共享库<br>       -On:程序优化，O，O2，O3</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>   Ubuntu 18.04 LTS 软件源</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="默认注释了源码镜像以提高-apt-update-速度，如有需要可自行取消注释"><a href="#默认注释了源码镜像以提高-apt-update-速度，如有需要可自行取消注释" class="headerlink" title="默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释"></a>默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</p>
-<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</p>
-<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-updates-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-updates-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</p>
-<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-backports-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-backports-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</h1><p>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</p>
-<h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-security-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-security-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</h1><h1 id="预发布软件源，不建议启用"><a href="#预发布软件源，不建议启用" class="headerlink" title="预发布软件源，不建议启用"></a>预发布软件源，不建议启用</h1><h1 id="deb-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse"><a href="#deb-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse" class="headerlink" title="deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse"></a>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</h1><h1 id="deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse"><a href="#deb-src-https-mirrors-tuna-tsinghua-edu-cn-ubuntu-bionic-proposed-main-restricted-universe-multiverse" class="headerlink" title="deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse"></a>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</h1><pre><code>sudo apt-get update
-sudo apt-get upgrade</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   根目录执行脚本</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>   /home/./tomcat/bin/startup.sh</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>   用户管理</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>sudo passwd root
-
-adduser [用户名] : 新增用户 
-passwd [用户名] : 修改用户密码 
-userdel -r [用户名]： 删除用户
-su [用户名]： 切换用户</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   文件管理</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>  在home下新建一个test.sh脚本<br>  vi /home/test.sh</p>
-<pre><code>:w   保存文件但不退出vi
-
-:w file 将修改另外保存到file中，不退出vi
-
-:w!   强制保存，不推出vi
-
-:wq  保存文件并退出vi
-
-:wq! 强制保存文件，并退出vi
-
-:q  不保存文件，退出vi
-
-:q! 不保存文件，强制退出vi
-
-:e! 放弃所有修改，从上次保存文件开始再编辑</code></pre><p> #-r是递归的删除参数表中的目录及其子目录。 目录将被清空并且删除。 当删除目录包含的具有写保护的文件时用户通常是被提示的。<br> #-f是不提示用户，删除目录下的所有文件。请注意检查路径，输成别的目录就悲剧了。<br> #-i是交互模式。使用这个选项，rm命令在删除任何文件前提示用户确认。</p>
-<p> 删除文件或文件夹<br>           rm  源文件或目录 目标文件或目录</p>
-<p> 移动文件或文件夹<br>          mv  源文件或目录 目标文件或目录</p>
-<p> 复制文件或文件夹<br>          cp 源文件或目录 目标文件或目录</p>
-<p> 重命名文件或文件夹<br>          mv 文件名或文件夹名 修改后的文件名或文件夹名</p>
-<p> 压缩包(解)压缩常用命令</p>
-<pre><code>.tar </code></pre><p>　　解包：tar xvf FileName.tar<br>　　打包：tar cvf FileName.tar DirName<br>　　<br>　　.gz<br>　　解压 1：gunzip FileName.gz<br>　　解压2：gzip -d FileName.gz<br>　　压缩：gzip FileName </p>
-<p>　　.tar.gz 和 .tgz<br>　　解压：tar zxvf FileName.tar.gz<br>　　压缩：tar zcvf FileName.tar.gz DirName 
-　　</p>
-<pre><code>.bz2 </code></pre><p>　　解压1：bzip2 -d FileName.bz2<br>　　解压2：bunzip2 FileName.bz2<br>　　压缩： bzip2 -z FileName </p>
-<p>　　.tar.bz2<br>　　解压：tar jxvf FileName.tar.bz2        或tar –bzip xvf FileName.tar.bz2<br>　　压缩：tar jcvf FileName.tar.bz2 DirName 
-　　</p>
-<p>　　.bz<br>　　解压1：bzip2 -d FileName.bz<br>　　解压2：bunzip2 FileName.bz<br>　　压缩：未知 </p>
-<p>　　.tar.bz<br>　　解压：tar jxvf FileName.tar.bz<br>　　压缩：未知<br>　　<br>       .Z<br>　　解压：uncompress FileName.Z<br>　　压缩：compress FileName<br>　　.tar.Z<br>　　解压：tar Zxvf FileName.tar.Z<br>　　压缩：tar Zcvf FileName.tar.Z DirName<br>　　<br>　　.zip<br>　　解压：unzip FileName.zip<br>　　压缩：zip FileName.zip DirName<br>　　压缩一个目录使用 -r 参数，-r 递归。例： $ zip -r FileName.zip DirName<br>　　<br>　　.rar<br>　　解压：rar x FileName.rar<br>　　压缩：rar a FileName.rar DirName<br>　　<br>　　<br>　　<br>      .lha<br>　　解压：lha -e FileName.lha<br>　　压缩：lha -a FileName.lha FileName </p>
-<p>　　———————————————<br>　　.rpm<br>　　解包：rpm2cpio FileName.rpm | cpio -div<br>　　———————————————<br>　　.deb<br>　　解包：ar p FileName.deb data.tar.gz | tar zxf -<br>　　———————————————<br>　　.tar .tgz .tar.gz .tar.Z .tar.bz .tar.bz2 .zip .cpio .rpm .deb .slp .arj .rar .ace .lha .lzh .lzx .lzs .arc .sda .sfx .lnx .zoo .cab .kar           .cpt .pit .sit .sea<br>　　解压：sEx x FileName.*<br>　　压缩：sEx a FileName.* FileName </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>   配置JAVA环境</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p> vi /etc/profile</p>
-<p> export JAVA_HOME=/home/jdk-12<br> export PATH=$JAVA_HOME/bin:$PATH<br> export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</p>
-<p>   <strong><strong><em>JDK 8</em></strong></strong><br>   export JRE_HOME=$JAVA_HOME/jre      </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>   防火墙管理</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>   启用区域端口和协议组合<br>   firewall-cmd [–zone=<zone>] –add-port=<port>[-<port>]/<protocol> [–timeout=<seconds>]</p>
-<p>   添加端口<br>   firewall-cmd –permanent –add-port=8080/tcp  </p>
-<p>   删除端口<br>   firewall-cmd –permanent –remove-port=8080/tcp</p>
-<p>   执行完毕会看到 success 这样的输出</p>
-<p>   重启服务才会生效：<br>   firewall-cmd –reload</p>
-<p>   查看端口是否开启<br>   firewall-cmd –permanent –query-port=8080/tcp</p>
-<p>   查看开放的端口：<br>   firewall-cmd –list-ports</p>
-<p> 1、开启80端口命令：/sbin/iptables -I INPUT -p tcp –dport 80 -j ACCEPT<br> 2、保存配置 命令：/etc/rc.d/init.d/iptables save<br> 3、重启服务命令 ：/etc/rc.d/init.d/iptables restart<br> 4、查看已经开放的端口： /etc/init.d/iptables status</p>
-<p> 关闭防火墙</p>
-<pre><code>systemctl stop firewalld.service</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   Tomcat配置</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;!-- Authorization setting for SSL --&gt;
-&lt;login-config&gt;
+    <h1 id="一、正则表达式及JavaScript实现"><a href="#一、正则表达式及JavaScript实现" class="headerlink" title="一、正则表达式及JavaScript实现"></a>一、正则表达式及JavaScript实现</h1><h2 id="（一）正则表达式"><a href="#（一）正则表达式" class="headerlink" title="（一）正则表达式"></a>（一）正则表达式</h2><h3 id="1、正则表达式的组成"><a href="#1、正则表达式的组成" class="headerlink" title="1、正则表达式的组成"></a>1、正则表达式的组成</h3><p>​        正则表达式，由普通字符，和特殊字符组成。用来声明一个特定结构的字符串。然后在一个字符串中，对该正则表达式进行匹配，从而查找是否存在子字符串。</p>
+<p>​        正则表达式的普通字符，就是普通的字母、中文、数字等。特殊字符是有特殊能力的字符，例如<code>. 代表一个任意的数字、字母、或者下划线</code>  。</p>
+<h3 id="2、正则表达式的特殊字符"><a href="#2、正则表达式的特殊字符" class="headerlink" title="2、正则表达式的特殊字符"></a>2、正则表达式的特殊字符</h3><table>
+<thead>
+<tr>
+<th>特殊字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>\</code></td>
+<td>如果<code>\</code> 出现在一个普通字符前面则将该普通字符转为特殊字符，例如<code>\d</code> 代表一个数字。<br />也可以将一个有特殊能力的字符，转为普通字符：<code>\\</code> 将<code>\</code> 转为能在字符串中显示的普通<code>\</code></td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>小数点：代表任意一个字符（换行符除外）</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>匹配一个词的边界。在英文中，空格，标点，字符串开始，字符串结束，都会造成边界。</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>匹配一个数字</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>匹配一个空白字符，包括空格、回车、tab</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>匹配大小写字母、数字、下划线，相当于<code>[a-zA-Z0-9]</code></td>
+</tr>
+<tr>
+<td><code>[]</code></td>
+<td>备选字符集，用于匹配一个值，该值可以是<code>[]</code> 中的任意一个值<br />可以使用 <code>a-z</code> 指定a到z的所有值。汉字的所有值，是<code>[\u4e00-\u9fa5]</code></td>
+</tr>
+<tr>
+<td><code>{最小值，最大值}</code></td>
+<td>控制数量，用来声明其前面元素出现的次数，可以设置最大值和最小值，也可以值设置一个值。默认是贪婪模式，从最大开始匹配</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>控制数量，说明一个匹配的元素，出现 0 次，或者多次。</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>控制数量。说明一个匹配的元素，最少出现 1 次，最多不限。</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>控制数量。说明一个匹配的元素，出现 0 或 1次。</td>
+</tr>
+<tr>
+<td>`</td>
+<td>`</td>
+</tr>
+<tr>
+<td><code>()</code></td>
+<td>捕获括号。匹配该项，并能记住匹配到的内容。可以用来对匹配字符串，进行分组。<br />例如在使用了 `</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>匹配输入的开始。并不是第一个字符，而是第一个字符前面的位置。</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>匹配输入的结束。并不是最后一个字符，而是最后一个字符后面的位置。</td>
+</tr>
+</tbody></table>
+<h3 id="3、特殊字符的说明"><a href="#3、特殊字符的说明" class="headerlink" title="3、特殊字符的说明"></a>3、特殊字符的说明</h3><h4 id="3-1-n-m-两个值的匹配"><a href="#3-1-n-m-两个值的匹配" class="headerlink" title="3.1 {n,m} 两个值的匹配"></a>3.1 <code>{n,m}</code> 两个值的匹配</h4><p>​        如果限制匹配元素数量时，同时限定了最少的出现次数，和最大的出现次数，则优先匹配最大的出现次数。称为贪婪模式。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原始字符串： '123456789'</span></span><br><span class="line"><span class="comment">// 正则表达式： \d&#123;7,9&#125;</span></span><br><span class="line"><span class="comment">// 默认匹配 9 个数字，如果匹配不到，就降级匹配</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="（二）字符串正则API"><a href="#（二）字符串正则API" class="headerlink" title="（二）字符串正则API"></a>（二）字符串正则API</h2><h3 id="1、查找固定词的位置-indexOf"><a href="#1、查找固定词的位置-indexOf" class="headerlink" title="1、查找固定词的位置:indexOf"></a>1、查找固定词的位置:<code>indexOf</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str.indexOf(<span class="string">'查询字符串'</span>,start_index);</span><br><span class="line"><span class="comment">// 在字符串 str 中，从 start_index 位置开始，查找 "查询字符串" 第一次出现的位置</span></span><br><span class="line"><span class="comment">// 结果：</span></span><br><span class="line"><span class="comment">// 		如果查找到了子字符串，则返回子字符串的索引</span></span><br><span class="line"><span class="comment">// 		如果没有找到，则返回 -1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2、查找符合某个规则的词出现的位置-search"><a href="#2、查找符合某个规则的词出现的位置-search" class="headerlink" title="2、查找符合某个规则的词出现的位置:search"></a>2、查找符合某个规则的词出现的位置:<code>search</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str.search(<span class="regexp">/regexp/</span>) ;</span><br><span class="line"><span class="comment">// 在字符串 str 中，根据 正则表达式 regexp ，来查找第一个符合规则的子字符串的位置</span></span><br><span class="line"><span class="comment">// 从字符串开始进行查找</span></span><br><span class="line"><span class="comment">// 结果：</span></span><br><span class="line"><span class="comment">//		如果找到了，就返回下标位置</span></span><br><span class="line"><span class="comment">//		如果没找到，则返回 -1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、查找并获取到匹配的关键词-match"><a href="#3、查找并获取到匹配的关键词-match" class="headerlink" title="3、查找并获取到匹配的关键词 : match"></a>3、查找并获取到匹配的关键词 : <code>match</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">str.match(<span class="regexp">/reg/ig</span>);</span><br><span class="line"><span class="comment">// match 函数，能获取到根据正则匹配到的实际子字符串。</span></span><br><span class="line"><span class="comment">// 如果加入了 参数 i ： 则匹配的字符串，忽略英文字符大小写</span></span><br><span class="line"><span class="comment">//  默认情况，会匹配第一个符合的子字符串，返回字符串，并且返回子字符串的下标</span></span><br><span class="line"><span class="comment">//		result = ["子字符串",'index':索引]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 参数 g：一直将字符串匹配完</span></span><br><span class="line"><span class="comment">// 将字符串匹配完，则可能产生多个子字符串。</span></span><br><span class="line"><span class="comment">// 		result = ["子字符串1",....,"子字符串2"]</span></span><br></pre></td></tr></table></figure>
+
+<p>如果未匹配到子字符串，该方法会返回 <code>null</code> 。</p>
+<h3 id="4、字符串内容替换-replace"><a href="#4、字符串内容替换-replace" class="headerlink" title="4、字符串内容替换 : replace"></a>4、字符串内容替换 : <code>replace</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">str.replace(<span class="regexp">/regexp/</span>,value);</span><br><span class="line"><span class="comment">// 将字符串中，符合正则表达式的内容，替换为其他的值</span></span><br><span class="line"><span class="comment">// replace 方法的第二个参数，提供传入回调函数的方式，来给匹配到的不同的内容，替换不同的值</span></span><br><span class="line"><span class="comment">// 回调函数，必须使用 return 返回一直值，以供替换</span></span><br><span class="line"></span><br><span class="line">str.replace(<span class="regexp">/违规字正则/</span>,<span class="function"><span class="keyword">function</span>(<span class="params">传入匹配到的对象形参</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> 返回要用来替换的值;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、字符串分割-split"><a href="#5、字符串分割-split" class="headerlink" title="5、字符串分割 :split"></a>5、字符串分割 :<code>split</code></h3><p>将字符串，按照某个符合规则的子字符串进行分割。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str.split(分隔符表达式); </span><br><span class="line"><span class="comment">// 分隔符表达式，可以是 字符串、正则表达式</span></span><br><span class="line"><span class="comment">// 如果字符串是空字符串："" ，则是将字符串打散为数组</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="（二）RegExp-对象"><a href="#（二）RegExp-对象" class="headerlink" title="（二）RegExp 对象"></a>（二）<code>RegExp</code> 对象</h2><h3 id="1、RegExp-对象"><a href="#1、RegExp-对象" class="headerlink" title="1、RegExp 对象"></a>1、<code>RegExp</code> 对象</h3><p>​        专门保存一条正则表达式，并提供根据正则表达式，来查找和校验字符串你的方法的对象。</p>
+<h3 id="2、创建RegExp-对象"><a href="#2、创建RegExp-对象" class="headerlink" title="2、创建RegExp 对象"></a>2、创建<code>RegExp</code> 对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 字面量方式创建一个 RegExp 对象</span></span><br><span class="line"><span class="keyword">var</span> regs = <span class="regexp">/正则表达式/</span>参数 ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果正则表达式，是可能发生变化的，是根据某些参数变动的，例如根据接口获取黑词</span></span><br><span class="line"><span class="comment">// 字面量方式创建的正则表达式对象，不能修改，所以不满足该需求，可以使用初始化构造函数</span></span><br><span class="line"><span class="keyword">var</span> regs = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"正则表达式"</span>,<span class="string">"参数"</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、RegExp-test-方法"><a href="#3、RegExp-test-方法" class="headerlink" title="3、RegExp().test() 方法"></a>3、<code>RegExp().test()</code> 方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> regs = <span class="regexp">/sss/g</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"测试使用的字符串"</span></span><br><span class="line"><span class="keyword">var</span> b = regs.test(str);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">用 regs 的规则，来验证 str 字符串。</span></span><br><span class="line"><span class="comment">如果 str 中，包含符合 regs 的子字符串，则返回真。否则返回假</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4、RegExp-exec-方法"><a href="#4、RegExp-exec-方法" class="headerlink" title="4、RegExp().exec() 方法"></a>4、<code>RegExp().exec()</code> 方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> regs = <span class="regexp">/正则表达式/g</span> ;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'测试使用字符串'</span>;</span><br><span class="line"></span><br><span class="line">regs.exec(str) ;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">exec（）函数，返回值是数组：[子字符串,"index":下标]</span></span><br><span class="line"><span class="comment">如果 str 中，包含多个符合 regs 的子字符串，则可以多次调用，每次调用会自动返回下一个匹配到的子字符串（因为exec 有一个lastindex 属性，当正则表达式对象不变时，能自动标记上一个匹配到的索引）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="二、function"><a href="#二、function" class="headerlink" title="二、function"></a>二、function</h1><h2 id="（一）创建函数"><a href="#（一）创建函数" class="headerlink" title="（一）创建函数"></a>（一）创建函数</h2><h3 id="1、function-关键字声明函数"><a href="#1、function-关键字声明函数" class="headerlink" title="1、function 关键字声明函数"></a>1、<code>function</code> 关键字声明函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f_name</span>(<span class="params">arguments_list</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// code</span></span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用<code>function</code> 关键字声明的函数，函数整体都会提升到变量作用域的最顶部。创建函数的过程：</p>
+<ul>
+<li>先声明一个 f_name 变量，作为window 对象的一个属性</li>
+<li>window.f_name 属性的值，是 function 存储的地址。所以函数不执行时，函数体不解析，即使存在语法错误，如果函数不运行，也不会报错。</li>
+</ul>
+<p>所以函数声明后，即使从执行顺序上来说，调用函数执行在定义函数前面，也依然能调用成功。</p>
+<p>使用 <code>var</code> 声明变量时，可以将变量提升到作用域提升到最顶部（个人理解就是编译时，将var声明的变量，直接添加到Window上），但是赋值操作是等程序执行到具体代码，才能真正的赋值。所以，使用var声明的变量，在为赋值之前，依然可以打印出来，只是值为 <code>undefined</code> .</p>
+<h3 id="2、var-声明的变量指向函数对象地址"><a href="#2、var-声明的变量指向函数对象地址" class="headerlink" title="2、var 声明的变量指向函数对象地址"></a>2、<code>var</code> 声明的变量指向函数对象地址</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f_name = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>使用 var 声明的变量，存储的是函数对象的地址，则函数整体不会提升到作用域最前面。只有执行到 赋值操作时，函数才生效。</p>
+<h2 id="（二）函数调用和重载"><a href="#（二）函数调用和重载" class="headerlink" title="（二）函数调用和重载"></a>（二）函数调用和重载</h2><h3 id="1、-函数重载"><a href="#1、-函数重载" class="headerlink" title="1、 函数重载"></a>1、 函数重载</h3><p>函数内部，存在 <code>arguments</code> 参数对象，用来存储实际传入到函数内部的实参值。函数同样存在形参，而形参就相当于函数创建的局部作用域变量。形参对应的顺序和<code>arguments</code> 对象存储实参值的顺序是一样的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span> (<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">arguments</span>[<span class="number">0</span>] == name ;<span class="comment">// true</span></span><br><span class="line">    <span class="built_in">arguments</span>[<span class="number">1</span>] == age ; <span class="comment">// false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在JavaScript 中，根据arguments参数对象，可以来判断实际调用函数是，传入的实参类型和个数，从而在函数内部实现函数的重载，让函数可以根据不同的调用参数，而产生不同的调用逻辑。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在实际的工作中，可以通过一个对象来存储传入到函数的实参，因为判断对象的属性是否有值，比较方便。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2、匿名函数"><a href="#2、匿名函数" class="headerlink" title="2、匿名函数"></a>2、匿名函数</h3><p>​        匿名函数就是不使用变量名或者函数名来持有的函数对象。由于不使用标识符持有，所以无法单独存在于程序中，一般应用在回调函数和自调用函数中（因为防止变量污染，所以基本上代码尽量放在自调用函数中，尽可能的减少变量名、函数名的产生）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(</span><br><span class="line">    <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125;()</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-    &lt;auth-method&gt;CLIENT-CERT&lt;/auth-method&gt;
+<p>使用自调用函数时，需要在最外面添加一个括号：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">		因为在 JavaScript 中，function 关键字后的内容，在编译阶段会被整体提升，所以需要使用标识符来持有（不管是function 后面加函数名，还是使用 var 的变量来接收function（）&#123;&#125; 的返回内容）。而自调用匿名函数，没有标识符来持有，所以会报错。但是如果给其外米加上一个操作符（可以是使用()包含，或者是void、+、-等操作符）来进行表示，则将整体标识为一个表达式，而表达式不会被提升，所以一直到程序执行到当前行时，才执行表达式。</span></span><br><span class="line"><span class="comment">		在执行表达式时，function（）&#123;&#125;返回一个创建的函数，然后程序继续向下运行时，遇到（），则直接将返回的函数调用了。调用结束后回收垃圾。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-    &lt;realm-name&gt;Client Cert Users-only Area&lt;/realm-name&gt;
+<h2 id="（三）作用域和作用域链"><a href="#（三）作用域和作用域链" class="headerlink" title="（三）作用域和作用域链"></a>（三）作用域和作用域链</h2><h3 id="1、全局作用域"><a href="#1、全局作用域" class="headerlink" title="1、全局作用域"></a>1、全局作用域</h3><p>​        作用域就是变量的可使用范围。JavaScript中有两级作用域：全局作用域和函数作用域。当程序开始执行时，先创建全局作用域对象：window 对象。在window对象中，保存着所有的全局变量和全局函数。</p>
+<h3 id="2、函数作用域"><a href="#2、函数作用域" class="headerlink" title="2、函数作用域"></a>2、函数作用域</h3><p>​            函数在调用时，会生成一个活动对象。这个活动对象，存储的就是局部作用域变量，和形参等。然后和全局作用域对象，一起形成一个列表。函数自己的活动对象，永远在这个作用域列表的前部。当函数中需要使用某个变量时，先在函数自己的活动对象里找，也就是优先找函数作用域变量。如果找到，就使用，如果没找到，则继续从作用域链的下一个变量对象中寻找。</p>
+<p>​        当函数调用完成时，释放掉自己的活动对象。连同函数的局部变量一起释放掉，所以函数的局部作用域变量，不可重用。</p>
+<p><img src="C:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C%E5%87%BD%E6%95%B0%E4%BD%9C%E7%94%A8%E5%9F%9F.png" alt=""></p>
+<h3 id="3、闭包"><a href="#3、闭包" class="headerlink" title="3、闭包"></a>3、闭包</h3><p>​        如果一个函数，包裹在另一个函数，且被另一个函数返回。当使用一个变量持有了这个被返回的内部函数，那么这个内部函数的作用域，就变得多了一层。广义的说，整个这个作用域的机制叫做闭包；狭义的说，内层函数，多持有了一层外部函数的作用域对象（活动对象），这个作用域对象，叫做闭包。</p>
+<p><img src="C:%5CUsers%5Cweb%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564619835708.png" alt="1564619835708"></p>
+<h1 id="三、面向对象"><a href="#三、面向对象" class="headerlink" title="三、面向对象"></a>三、面向对象</h1><h3 id="1、创建对象"><a href="#1、创建对象" class="headerlink" title="1、创建对象"></a>1、创建对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    sname:<span class="string">"obj_name"</span>,</span><br><span class="line">    sayHi:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">     	<span class="built_in">console</span>.log(<span class="string">'this is '</span>+<span class="keyword">this</span>.sname)   ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 访问对象的属性，和方法，可以只用 . 的简写方式来引用，也可以使用[] 来访问属性名</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.sname);</span><br><span class="line">obj.sayHi();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在对象中，如果想要调用自身的属性和方法，需要使用this 来代替。</span></span><br></pre></td></tr></table></figure>
 
-&lt;/login-config&gt;
+<p>也可调用对象的构造函数，来创建对象，然后再给创建好的对象增加属性和方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">obj.sname = <span class="string">'sname'</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、构造函数的方式创建对象"><a href="#2、构造函数的方式创建对象" class="headerlink" title="2、构造函数的方式创建对象"></a>2、构造函数的方式创建对象</h3><p>​        如果一类对象，具有相同的抽象格式，可以使用构造函数，来统一创建。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假设，有30个学生，每个学生，都有名字，年龄，和自我介绍的方法，可以创建一个构造函数，需要产生一个学生对象的时候，就使用构造函数来实例化一个对象。</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">sname,sage</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.sname = sname;</span><br><span class="line">    <span class="keyword">this</span>.sage = sage;</span><br><span class="line">    <span class="keyword">this</span>.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.sname);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> s_1 = <span class="keyword">new</span> Student(<span class="string">"学生1"</span>,<span class="number">16</span>);</span><br><span class="line"><span class="keyword">var</span> s_2 = <span class="keyword">new</span> Student(<span class="string">"学生2"</span>,<span class="number">19</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、new-操作符"><a href="#3、new-操作符" class="headerlink" title="3、new 操作符"></a>3、<code>new</code> 操作符</h3><p>​        <code>new</code> 操作符，用来调用构造函数，并且能根据构造函数的内容，返回一个新的对象。new 操作符调用一个构造函数时，会经历以下几个步骤：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1、新建一个空白对象</span></span><br><span class="line"><span class="keyword">var</span> new_obj = &#123;&#125;</span><br><span class="line"><span class="comment">// 2、将新建的对象的__proto__属性，指向构造函数的原型对象</span></span><br><span class="line"><span class="comment">//  new_obj.__proto__ = Student.prototype;</span></span><br><span class="line"><span class="built_in">Object</span>.setPrototypeOf(new_obj.__proto__,Student.prototype);</span><br><span class="line"><span class="comment">// 3、将构造函数的this，指向为新建的空白对象，且调用构造函数，以此来初始化空白对象，使空白对象具有构造函数的属性，和方法</span></span><br><span class="line">Student.call(new_obj);</span><br><span class="line"><span class="comment">// 4、返回新建的对象，赋值给new 操作符前面声明的变量</span></span><br></pre></td></tr></table></figure>
 
-&lt;security-constraint&gt;
+<p>使用new操作符创建的对象，和其构造函数除了复制了属性和方法外，还存在一个原型的关系：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造函数.prototype 属性，指向的对象，叫做原型对象。</span></span><br><span class="line"><span class="comment">// 而实例化对象的__proto__ 属性，指向的就是构造函数的原型对象</span></span><br><span class="line">obj.__proto__  ==&gt; <span class="built_in">Function</span>.prototype</span><br></pre></td></tr></table></figure>
 
-    &lt;web-resource-collection&gt;
+<h3 id="4、原型和原型链"><a href="#4、原型和原型链" class="headerlink" title="4、原型和原型链"></a>4、原型和原型链</h3><p>​        构造函数中的属性和方法，再实例化之后，被子对象完全复制，但是再众多子对象中，所调用的构造函数的方法，功能都是一样的，却为每一个子对象都创建了一遍，这种实例方式，比较消耗内存，所以，一般子对象的公用方法，都会放在构造函数的原型中，因为所有子对象指向的构造函数的原型对象，是一个，所以解决了很大的内存。</p>
+<p>​        在子对象中，调用一个方法时，先在子对象的所有自有方法中查找，是否有要调用的方法。如果找到了就直接执行，如果没找到，就通过<code>__proto__</code> 属性，追溯到构造函数的原型对象中，去原型对象中寻找。同样原型对象也可能存在上层的构造函数（如果不存在，则直接指向object函数的原型对象），所以子对象调用的方法，是按照原型对象指向的顺序，来依次进行查找的。这个顺序叫做原型链。</p>
+<h3 id="5、图示："><a href="#5、图示：" class="headerlink" title="5、图示："></a>5、图示：</h3><p>![1_prototype chain](C:\Users\web\Desktop\笔记\第-3-阶段：JavaScript高级\笔记\1_prototype chain.png)</p>
+<p><img src="C:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0-%E7%BB%A7%E6%89%BF-%E5%8E%9F%E5%9E%8B%E9%93%BE.png" alt="构造函数-继承-原型链"></p>
+<h3 id="6、自定义继承"><a href="#6、自定义继承" class="headerlink" title="6、自定义继承"></a>6、自定义继承</h3><p>​        如果对象原本继承的原型对象提供的方法，不满足对象的需求，或者对象需要调用另一个原型及其原型链的函数，可以更换对象的原型指向：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假设一个对象，是直接实例化的 Object 构造函数</span></span><br><span class="line"><span class="comment">// obj 的原型对象，是Object.prototype</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>(); </span><br><span class="line"></span><br><span class="line"><span class="comment">// 更换obj 对象指向的原型对象，是 数组的原型对象</span></span><br><span class="line"><span class="comment">// 但是直接更换指向的方式，是浏览器不推荐的</span></span><br><span class="line">obj.__proto__ = <span class="built_in">Array</span>.prototype;</span><br><span class="line"><span class="comment">// 使用内建方法，代替直接更换原型对象，传入的是子对象，和需要绑定的原型对象</span></span><br><span class="line"><span class="built_in">Object</span>.setPrototypeOf(obj,<span class="built_in">Array</span>.prototype);</span><br></pre></td></tr></table></figure>
 
-        &lt;web-resource-name&gt;SSL&lt;/web-resource-name&gt;
+<p>如果需要更改一个构造函数下，所有的子对象的原型对象，可以直接更改构造函数的原型对象：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在定义完构造函数，未初始化实例之前，更换构造函数的原型对象</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">InitFuntion</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line">InitFunction.prototype = obj;</span><br></pre></td></tr></table></figure>
 
-        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+<h3 id="7、关于实例对象的一些问题"><a href="#7、关于实例对象的一些问题" class="headerlink" title="7、关于实例对象的一些问题"></a>7、关于实例对象的一些问题</h3><p>​        在实例对象中，调用方法是，是按照原型链查找：先在对象自身上寻找方法，找不到，通过<code>__proto__</code> 属性，追溯到原型中查找。但是方法调用的时候，只需要<code>obj.funtion()</code> 即可调用，不需要<code>obj.__proto__.funtion()</code> ,所以，调用实例对象的方法时，默认情况下，会有持有对原型对象的引用（应该是一个内部的机制）。但是如果给实例对象的方法，重写了，就会导致实例对象对这个方法（和原来能在原型链中查找的方法是同名的）的引用，不能指向原型链了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">InitFunction</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line">InitFunction.prototype.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> InitFunction();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 默认情况下，调用方法时，会去原型中查找。且如果改动了原型链的方法，所有子对象，都会受影响</span></span><br><span class="line"><span class="comment">// 重写子对象中的方法，断开该方法和原型对象的联系</span></span><br><span class="line">obj.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 
-    &lt;/web-resource-collection&gt;
+<h1 id="四、ES5-的方法"><a href="#四、ES5-的方法" class="headerlink" title="四、ES5 的方法"></a>四、<code>ES5</code> 的方法</h1><h3 id="1、严格模式"><a href="#1、严格模式" class="headerlink" title="1、严格模式"></a>1、严格模式</h3><p>​        启用严格模式，会导致JavaScript产生和平时不一样的特性，会运行和普通JavaScript更严格的机制。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br></pre></td></tr></table></figure>
 
-    &lt;user-data-constraint&gt;
+<p>启用严格模式：</p>
+<ul>
+<li>禁止给未声明的变量赋值：旧的JavaScript中，可以给未使用var声明的变量赋值</li>
+<li>静默失败升级为错误：以前不报错的地方，会报错，导致程序不能继续执行</li>
+<li>普通函数，和匿名函数，默认调用时，this不在指向window，而是指向undefined</li>
+<li>禁止使用<code>arguments.callee</code> 参数：该参数指向的是函数自身，可以通过<code>arguments.callee()</code> 来调用函数自己，禁用则表示不推荐使用递归。</li>
+</ul>
+<h3 id="2、保护对象属性"><a href="#2、保护对象属性" class="headerlink" title="2、保护对象属性"></a>2、保护对象属性</h3><p>​        对象的属性的分类：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.命名属性</span></span><br><span class="line"><span class="comment">    1.1 数据属性：实际存储数据的属性</span></span><br><span class="line"><span class="comment">    1.2 访问器属性：不存储数据，对另外一个 "数据属性" 提供保护的属性</span></span><br><span class="line"><span class="comment">2.内部属性</span></span><br><span class="line"><span class="comment">	JavaScript 引擎才能访问的属性。通过程序，无法操作。但是有的属性，有 JavaScript 内部提供的API 。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-        &lt;transport-guarantee&gt;CONFIDENTIAL&lt;/transport-guarantee&gt;
+<p>在<code>E5</code> 中，对象的属性（指的是数据属性），也是一个对象，由四个参数构成，假设：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    sname:<span class="string">"names"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 对象 obj 的 sname 属性，也是一个对象：</span></span><br><span class="line">sname = &#123;</span><br><span class="line">    value:<span class="string">"names"</span>, 		<span class="comment">// 方式对象属性实际存储的值</span></span><br><span class="line">    writeable:<span class="literal">false</span>, 	<span class="comment">// 用来配置对象的属性，是否能被修改</span></span><br><span class="line">    enumerable:<span class="literal">false</span>,	<span class="comment">// 是否可被枚举，也就是被 for ... in 发现</span></span><br><span class="line">    configurable:<span class="literal">false</span>	<span class="comment">// 是否可被删除。同时控制前两个属性，是否能被修改。</span></span><br><span class="line">    					<span class="comment">// configurable 属性，一旦修改为false 后，将不能再次修改</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    &lt;/user-data-constraint&gt;
+<p>构成对象的属性，虽然也是对象，但是不能通过 <code>.</code> 的方式来直接引用，需要使用<code>javascript</code> 提供的函数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">sname</span>:<span class="string">"names"</span>&#125;;</span><br><span class="line"><span class="comment">// Object.definePrototype( 对象名，属性名，&#123;权限配置对象&#125;)</span></span><br><span class="line"><span class="built_in">Object</span>.defineProperty(obj,sname,&#123;<span class="attr">writeable</span>:<span class="literal">false</span>&#125;);</span><br></pre></td></tr></table></figure>
 
-&lt;/security-constraint&gt;
+<p>如果想同时设置对象的几个属性，可以使用函数：<code>Object.defineProperties</code> ：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">sname</span>:<span class="string">'names'</span>,<span class="attr">sage</span>:<span class="number">11</span>&#125;;</span><br><span class="line"><span class="comment">// Object.defineProperties(对象名，&#123;对象属性配置对象&#125;)</span></span><br><span class="line"><span class="built_in">Object</span>.defineProperties(obj,&#123;</span><br><span class="line">    sname:&#123;<span class="attr">writeable</span>:<span class="literal">false</span>&#125;,<span class="attr">sage</span>:&#123;<span class="attr">enumerable</span>:<span class="literal">false</span>&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
+<p>​        如果需要在设置对象的属性时，增加校验逻辑，使用对象属性的对象配置，无法完成任务，需要使用 <code>访问器属性</code> 来实现。访问器属性类似于其他语言的 <code>getter</code> 和<code>setter</code> ，访问器属性，可以控制目标属性的值，和是否可写，但是不能控制<code>enumerable</code> 和<code>configurable</code> 属性：</p>
+<p><img src="C:%5CUsers%5Cweb%5CDesktop%5C%E7%AC%94%E8%AE%B0%5C%E7%AC%AC-3-%E9%98%B6%E6%AE%B5%EF%BC%9AJavaScript%E9%AB%98%E7%BA%A7%5C%E7%AC%94%E8%AE%B0%5C05%5C%E8%AE%BF%E9%97%AE%E5%99%A8%E5%B1%9E%E6%80%A7.png" alt=""></p>
+<h3 id="3、保护对象结构"><a href="#3、保护对象结构" class="headerlink" title="3、保护对象结构"></a>3、保护对象结构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	防止拓展，防止增加新属性</span></span><br><span class="line"><span class="comment">	实际上，每个对象内部都有一个 extensible 属性，该函数，就是将其设为false。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">Object</span>.preventExtensions(obj);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	密封：即防止拓展，又防止删除属性</span></span><br><span class="line"><span class="comment">	相当于把对象的 extensible 属性，设置为 false</span></span><br><span class="line"><span class="comment">	同时还把对象的所有属性的 configurable 属性设置为false</span></span><br><span class="line"><span class="comment">	工作中，对象的绝大多数操作，都是在密封条件下</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">Object</span>.seal(obj)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	冻结：对象的一切都不能修改，包括结构和属性值</span></span><br><span class="line"><span class="comment">	对象的 extensible 设置为 false</span></span><br><span class="line"><span class="comment">	对象里面，所有属性的 configurable 属性设置为false，不能删除</span></span><br><span class="line"><span class="comment">	对象里面，所有属性的 writable 属性设置为false，不能修改</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Object</span>.freeze(obj)</span><br></pre></td></tr></table></figure>
 
-[ Http Protocol Auto To Https Security Protocol ]
+<h3 id="4、创建对象"><a href="#4、创建对象" class="headerlink" title="4、创建对象"></a>4、创建对象</h3><p>如果需要在没有在构造函数的情况下，以某个对象为原型，创建一个子对象：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Object.create(原型对象，&#123;新建对象需要添加的属性&#125;)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Object</span>.create(obj, <span class="comment">// 传入原型对象</span></span><br><span class="line">              &#123;<span class="comment">// 设置对象自己的属性</span></span><br><span class="line">    sname:&#123;<span class="attr">value</span>:<span class="string">"name"</span>,<span class="attr">writable</span>:<span class="literal">false</span>&#125;,</span><br><span class="line">    sage:&#123;valueL19,<span class="attr">writable</span>:<span class="literal">false</span>&#125;</span><br><span class="line">			&#125;</span><br><span class="line">             ))</span><br></pre></td></tr></table></figure>
 
+<h3 id="5、给函数绑定this"><a href="#5、给函数绑定this" class="headerlink" title="5、给函数绑定this"></a>5、给函数绑定this</h3><p>​        如果函数执行时，指向的this，不是我们需要的this，而是需要给函数指定一个this。函数自身提供了绑定this 的方法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	一次性绑定this ： 使用 函数.call 或者 函数.apply</span></span><br><span class="line"><span class="comment">	函数.call（绑定对象，函数参数1，函数参数2.....）</span></span><br><span class="line"><span class="comment">	函数.apply（绑定对象，[函数参数1，函数参数2....])</span></span><br><span class="line"><span class="comment">	</span></span><br><span class="line"><span class="comment">	call调用时，传入的函数参数，是依次传入，而 apply 是需要将函数的参数放在一个数组里，调用时，会自动将参数打散，然后调用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">sname</span>:<span class="string">'obj'</span>&#125;;</span><br><span class="line"></span><br><span class="line">f1.call(ojb); <span class="comment">// 打印的 this 就是 传入的 obj </span></span><br><span class="line">f1.apply(obj);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	根据绑定的 this 对象，返回一个新的函数，从而实现永久绑定 。</span></span><br><span class="line"><span class="comment">	var function_name = 函数.bind（this）</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">f1.bind(obj)</span><br></pre></td></tr></table></figure>
 
-&lt;Connector port=&quot;80&quot; protocol=&quot;HTTP/1.1&quot;
-           connectionTimeout=&quot;20000&quot;
-           redirectPort=&quot;443&quot;/&gt;
 
 
-&lt;Connector port=&quot;443&quot; protocol=&quot;HTTP/1.1&quot;
-           SSLEnabled=&quot;true&quot;
-           maxThreads=&quot;150&quot;
-           scheme=&quot;https&quot;
-           secure=&quot;true&quot;
-           keystoreFile=&quot;conf/bydengjie.com.pfx&quot;
-           keystorePass=&quot;SSi5jx47&quot;
-           clientAuth=&quot;false&quot;
-           sslProtocol=&quot;TLS&quot;/&gt;</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   安装MySQL</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p> 使用root登录</p>
-<pre><code>1.确保服务器系统处于最新状态
-[root@localhost ~]# yum -y update
-如果显示以下内容说明已经更新完成
-Replaced:
-  grub2.x86_64 1:2.02-0.64.el7.centos   grub2-tools.x86_64 1:2.02-0.64.el7.centos
-Complete!
+<h3 id="6、数组的API"><a href="#6、数组的API" class="headerlink" title="6、数组的API"></a>6、数组的API</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. indexOf()</span></span><br><span class="line"><span class="comment">// 查找某个元素的索引</span></span><br><span class="line"><span class="keyword">var</span> index = arr.indexOf(<span class="string">'a'</span>) ; </span><br><span class="line"></span><br><span class="line"><span class="comment">//  2.every() </span></span><br><span class="line"><span class="comment">//  判断数组中的元素，是否全部判定结果为true </span></span><br><span class="line"><span class="comment">// 	every 函数，会遍历数组，融合验证每一个元素，回调函数返回布尔值，如果遍历中，回调函数返回false，则停止遍历，整个every 函数返回false。如果一直遍历完，所有的回调函数，都返回true，则every 函数执行结果是true。</span></span><br><span class="line"><span class="keyword">var</span> bools = arr.every(<span class="function"><span class="keyword">function</span>(<span class="params">ele,index,arr</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// ele : 当前遍历的元素</span></span><br><span class="line">    <span class="comment">// index ： 当前元素的索引</span></span><br><span class="line">    <span class="comment">// arr ：原始数组</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>/<span class="literal">false</span>；</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. some()</span></span><br><span class="line"><span class="comment">// 验证数组中的元素，是否有符合某条件的</span></span><br><span class="line"><span class="comment">// 遍历数组元素，如果回调函数结果是true，some 函数返回true。回调函数全部返回false时，some 函数才返回false</span></span><br><span class="line"><span class="keyword">var</span> bools = arr.some(<span class="function"><span class="keyword">function</span>(<span class="params">ele,index,arr</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// ele : 当前遍历的元素</span></span><br><span class="line">    <span class="comment">// index ： 当前元素的索引</span></span><br><span class="line">    <span class="comment">// arr ：原始数组</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>/<span class="literal">false</span>；</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4.forEach()</span></span><br><span class="line"><span class="comment">// 遍历数组元素，代替for循环。单纯的对数组元素进行操作，没有返回值</span></span><br><span class="line">arr.foEach(<span class="function"><span class="keyword">function</span>(<span class="params">ele,index,arr</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// ele : 当前遍历的元素</span></span><br><span class="line">    <span class="comment">// index ： 当前元素的索引</span></span><br><span class="line">    <span class="comment">// arr ：原始数组</span></span><br><span class="line">    <span class="comment">// code</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 5. map()</span></span><br><span class="line"><span class="comment">// 根据原数组，复制一个新数组。复制的过程中，可以使用回调函数，来对元素进行操作</span></span><br><span class="line"><span class="keyword">var</span> new_arr = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">ele,index,arr</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// ele : 当前遍历的元素</span></span><br><span class="line">    <span class="comment">// index ： 当前元素的索引</span></span><br><span class="line">    <span class="comment">// arr ：原始数组</span></span><br><span class="line">    <span class="comment">// code</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-2.重启服务器
-[root@localhost ~]# reboot
+<h1 id="五、ES6-的方法"><a href="#五、ES6-的方法" class="headerlink" title="五、ES6 的方法"></a>五、<code>ES6</code> 的方法</h1><h3 id="1、let-声明"><a href="#1、let-声明" class="headerlink" title="1、let 声明"></a>1、<code>let</code> 声明</h3><p>​        <code>ES6</code> 新增的声明变量的关键字。主要是解决变量的声明提前问题。使用 <code>let</code> 声明的变量，不会被声明提前，只有执行到<code>let 变量名=值</code> 的时候，才会具体的声明变量。而且使用<code>let</code> 声明的变量，能绑定在离自己最近的<code>{}</code> 块级作用域内。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">20</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a,b);</span><br><span class="line"><span class="comment">// 结果报错，信息为 ： b 未声明。</span></span><br><span class="line"><span class="comment">// 因为 b 的作用域，是其所在的 &#123;&#125; 内</span></span><br><span class="line"><span class="comment">// let 声明变量的原理，是使用了匿名函数自调用</span></span><br><span class="line">&#123;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">20</span></span><br><span class="line">    &#125;)()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>如果使用了<code>let</code> 声明变量：</p>
+<ul>
+<li>在相同的作用域或块级作用域，禁止使用 <code>let</code> 声明两个变量</li>
+<li><code>let</code> 声明变量的所在作用域，不允许提前使用 该变量</li>
+</ul>
+<h3 id="2、箭头函数"><a href="#2、箭头函数" class="headerlink" title="2、箭头函数"></a>2、箭头函数</h3><p>​        箭头函数是对<code>function</code> 声明函数的简写。大多数匿名函数和回调函数，都是用箭头函数进行简写。使用箭头函数的准则：</p>
+<ul>
+<li>去掉 <code>function</code> ，在参数列表和函数体之间，使用<code>=&gt;</code> 进行连接</li>
+<li>如果形参列表，只有一个参数时，可以省略形参列表的括号</li>
+<li>当函数体只有一个语句时，也可以省略 <code>{}</code> .但是如果唯一的语句还是个<code>return</code> 语句，则必须省略<code>return</code> </li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params">a</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 箭头函数简写：</span></span><br><span class="line">a=&gt;a=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
 
-3.下载MySql安装包
-[root@localhost ~]# rpm -Uvh https://repo.mysql.com//mysql80-community-release-el7-1.noarch.rpm
+<p>​        使用箭头函数，会导致箭头函数调用时，所指向的this 变的和函数外的this 相同了。所以对象的方法，不能使用箭头函数进行简写。因为对象的方法中，this 指向的是当前对象，而使用了箭头函数，就变成了和对象同一个作用域的那个this了。</p>
+<p>​        同时，在箭头函数中，不能使用<code>arguments</code> 对象。使用<code>rest</code> 参数增强的方法来解决。</p>
+<h3 id="3、参数增强"><a href="#3、参数增强" class="headerlink" title="3、参数增强"></a>3、参数增强</h3><p>​        <code>ES6</code> 支持在声明函数时，设置函数的缺省值，但是只支持对最后一个参数设置默认值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function f1(a,b&#x3D;10)&#123;</span><br><span class="line">    console.log(a,b); &#x2F;&#x2F; b 没传入，依然可以获取到值</span><br><span class="line">&#125;</span><br><span class="line">function f2(a)&#123;</span><br><span class="line">    &#x2F;&#x2F; 在 es5 及其之前，不支持缺省值，可以使用其他方法代替：</span><br><span class="line">    var b &#x3D; b|| 10; &#x2F;&#x2F; 局部变量获取实参b，获取不到，就或运算到另外一个默认值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>​        在<code>ES</code> 中，对<code>arguments</code> 参数，使用<code>...rest</code> 进行了加强。<code>...rest</code> 能接收到未声明的形参后面，继续传入的实参值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function f(a,b,...c)&#123;</span><br><span class="line">    &#x2F;&#x2F; ...c 会接收到，从第三个，及其之后的所有的实参值</span><br><span class="line">    &#x2F;&#x2F; ...c 是一个数组</span><br><span class="line">    &#x2F;&#x2F; ...c 可以在箭头函数中使用</span><br><span class="line">&#125;</span><br><span class="line">f(10,20,3,3,3,3);</span><br><span class="line">&#x2F;&#x2F; ...c 接收的是数组：【3,3,3,3】</span><br></pre></td></tr></table></figure>
 
-4.安装MySql
-[root@localhost ~]# yum install -y mysql-community-server
-如果显示以下内容说明安装成功
-Complete!
+<p><code>...</code> 还有打散的作用，后面可以操作一个数组，或者对象，将其打散：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> b = [<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">var</span> c = [...a,...b] <span class="comment">// c = [1,2,3,4,5,6,7,8,9,10]</span></span><br><span class="line"><span class="comment">// 对象同样可以使用 ... 打散，然后重组：</span></span><br><span class="line"><span class="comment">// var obj = &#123;...obj1,...obj2&#125;</span></span><br></pre></td></tr></table></figure>
 
-5.设置开机启动Mysql
-[root@localhost ~]# systemctl enable mysqld.service
+<h3 id="4、for-of-遍历"><a href="#4、for-of-遍历" class="headerlink" title="4、for..of 遍历"></a>4、for..of 遍历</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for(var i of arr)&#123;</span><br><span class="line">    &#x2F;&#x2F; i 是 arr 中的每个元素</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; for...of 遍历方法，直接迭代数组中的元素</span><br><span class="line">&#x2F;&#x2F; 遍历的数组，要求必须是数组，或者下标是数字的类数组对象</span><br><span class="line">&#x2F;&#x2F; 不能遍历出非数字的下标元素，所以不能遍历对象</span><br><span class="line">&#x2F;&#x2F; 同时，for..of 支持遍历字符串</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 而 for...in 方法，还能直接迭代对象</span><br></pre></td></tr></table></figure>
 
-6.检查是否已经安装了开机自动启动
-[root@localhost ~]# systemctl list-unit-files | grep mysqld
-如果显示以下内容说明已经完成自动启动安装
-mysqld.service                                enabled
+<h3 id="5、解构"><a href="#5、解构" class="headerlink" title="5、解构"></a>5、解构</h3><p>​        解构，就是将对象，或者数组的一部分数据，提取出来，存入到固定的变量中。例如 nodejs中，导入的模块有很多类，但是只需要其中一个类时，可以使用解构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 数组解构</span><br><span class="line">&#x2F;&#x2F;   解构使用的变量，自动按照顺序，去原始数组中找到元素，然后赋值给自己</span><br><span class="line">var a &#x3D; [1,2,3,5]</span><br><span class="line">var [b,c] &#x3D; a; &#x2F;&#x2F; b &#x3D; 1,c &#x3D; 2</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 2. 对象解构</span><br><span class="line">var &#123;属性名1：变量名1，属性名2：变量名2&#125; &#x3D; &#123;属性名1：值1，属性名2：值2，....，属性名n：值n&#125;</span><br><span class="line">&#x2F;&#x2F; 如果，被赋值的对象，属性名&#x3D;变量名，则可以进行简写：</span><br><span class="line">var &#123;变量名1 ， 变量名2 &#125; &#x3D; &#123;属性名1：值1，属性名2：值2，....，属性名n：值n&#125;；</span><br><span class="line">变量1 &#x3D; 值1，</span><br><span class="line">&#x2F;&#x2F; 对象解构，可以放在函数的形参中，用来获取函数调用时，传入的实参对象：</span><br><span class="line">function f(&#123;sname,sage&#125;)&#123;</span><br><span class="line">    &#x2F;&#x2F; code</span><br><span class="line">&#125;</span><br><span class="line">f(&#123;sname:&#39;www&#39;,sage:&quot;18&quot;&#125;)</span><br></pre></td></tr></table></figure>
 
-7.设置开启服务
-[root@localhost ~]# systemctl start mysqld.service
+<h3 id="6、对象方法简化"><a href="#6、对象方法简化" class="headerlink" title="6、对象方法简化"></a>6、对象方法简化</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 对象属性名的简化</span></span><br><span class="line"><span class="comment">// 如果对象的属性，来自外部的定义</span></span><br><span class="line"><span class="keyword">var</span> age = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    sname:<span class="string">"老王"</span>,</span><br><span class="line">    age:age， <span class="comment">// 对象属性来自外部定义的变量，且对象属性名和外部变量名一致，简写为：age</span></span><br><span class="line">    age, <span class="comment">// 简写后的age 属性</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 简写对象方法</span></span><br><span class="line"><span class="comment">// 函数方法，不必在写 :function ，直接属性名+函数参数+函数体</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    say1:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="string">"原始的对象方法"</span>)&#125;,</span><br><span class="line">    say2()&#123;<span class="built_in">console</span>.log(<span class="string">"简化的对象方法"</span>)&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-8.查看MySql默认密码
-[root@localhost ~]# grep &apos;temporary password&apos; /var/log/mysqld.log
+<h3 id="7、class-声明类型"><a href="#7、class-声明类型" class="headerlink" title="7、class 声明类型"></a>7、<code>class</code> 声明类型</h3><p>​        使用<code>class</code> 重新对类型进行封装。去除原型对象方法，对构造函数声明上造成的语义化障碍。使用<code>class</code> 声明一个类型的准则：</p>
+<ul>
+<li>使用 <code>class{}</code> 包裹构造函数，和原型对象函数</li>
+<li>类型名，接在<code>class</code> 关键字之后，构造函数，使用固定的关键字<code>constructor</code> 声明</li>
+<li>放入<code>class</code> 中的原型对象函数，不在需要显示的声明为<code>.prototype</code> 对象的方法，所有放入<code>class</code> 关键字的方法，自动添加为原型对象的方法。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 类型名</span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>()&#123;</span><br><span class="line">        <span class="comment">//构造函数</span></span><br><span class="line">        <span class="keyword">this</span>.key = key;</span><br><span class="line">        ....</span><br><span class="line">    &#125;</span><br><span class="line">	sayHi()&#123; <span class="comment">// 省略 类型名.prototype ，且使用了对象的简写</span></span><br><span class="line">        <span class="comment">// 函数体</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">myArray</span></span>&#123;</span><br><span class="line">            <span class="keyword">constructor</span>(date)&#123;</span><br><span class="line">                <span class="keyword">this</span>.date = date;</span><br><span class="line">                <span class="keyword">this</span>.length = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            push(value)&#123;</span><br><span class="line">                <span class="keyword">this</span>.date.push(value);</span><br><span class="line">                <span class="keyword">this</span>.length += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> a = <span class="keyword">new</span> myArray([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);</span><br><span class="line">a.push(<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
 
-9.登录MySql，输入用户名和密码
-[root@localhost ~]# mysql -u root -p
+<p>​        在使用<code>function</code> 来构造一个类型时，如果需要使用子类型，来继承父类型，需要的步骤比较复杂，假设已经存在一个父类，<code>F1</code> :</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">F1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">F1.prototype.fun1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
 
-10.修改当前用户密码
-mysql&gt;ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;XXX&apos;;
+<p>先再创建一个子类<code>F2</code> 来继承<code>F1</code> 的构造函数，和原型对象，并且添加属于子类<code>F2</code> 自己的构造函数代码和原型对象方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">F2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 先以当前对象，调用要继承的父类，从而实现构造方法的继承</span></span><br><span class="line">    F1.call(<span class="keyword">this</span>);</span><br><span class="line">    <span class="comment">// 其他构造函数方法。。。。</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 然后先继承父类的原型对象</span></span><br><span class="line"><span class="built_in">Object</span>.setPrototypeOf(F2.prototype,F1.prototype) ; <span class="comment">// 建议使用 setprototyoeof 方法，不要直接使用prototype指向</span></span><br><span class="line"><span class="comment">// 然后实现自定义的原型对象方法</span></span><br><span class="line">F2.prototype.fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 
-11.开启远程登录，授权root远程登录
-mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;XXX&apos; WITH GRANT OPTION;
+<p>而在使用<code>class</code> 声明的类型中，使用<code>extends</code> 关键字，就可以将以上流程简化。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">F1</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>()&#123;</span><br><span class="line">        <span class="comment">// 构造函数代码</span></span><br><span class="line">    &#125;</span><br><span class="line">    push()&#123;</span><br><span class="line">        <span class="comment">// 构造函数方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">F2</span> <span class="keyword">extends</span> <span class="title">F1</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>()&#123;</span><br><span class="line">        <span class="keyword">super</span>(); <span class="comment">// 首先执行父类构造函数</span></span><br><span class="line">        <span class="comment">// 子类构造函数        </span></span><br><span class="line">    &#125;</span><br><span class="line">    pop()&#123;</span><br><span class="line">        <span class="comment">// 增加的子类型方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-13.命令立即执行生效
-mysql&gt;flush privileges;</code></pre><p>——    其他功能:</p>
-<pre><code>#配置MySQL安全策略
-[root@localhost ~]# mysql_secure_installation
+<h3 id="8、promise-处理回调"><a href="#8、promise-处理回调" class="headerlink" title="8、promise  处理回调"></a>8、<code>promise</code>  处理回调</h3><p>​        如果出现多层回调函数嵌套，回调函数嵌套层次过深，则不容易维护，且可读性差。提供<code>promise</code> 对象，从易读性上，改善回调函数嵌套问题。</p>
+<p>1）什么是<code>promise</code> 对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// promise 对象，初始化时的参数，是一个函数</span></span><br><span class="line"><span class="comment">// 该初始化函数接收两个参数，function(call_1,call_2)，分别是两个回调函数</span></span><br><span class="line"><span class="comment">// 但是这两个回调函数，在初始化时并不执行</span></span><br><span class="line"><span class="comment">// 在实例化后的 promise 对象中，有then 方法，能执行在构造promise时函数的 call_1 回调函数</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">call_1</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"promise对象初始化函数执行，但是call_1 函数不执行，却需要调用"</span>);</span><br><span class="line">    call_1();</span><br><span class="line">&#125;)</span><br><span class="line">a.then(call_1)；<span class="comment">// call_1 对应的是a实例时，函数中的方法，在调用then 时，call_1 需要传入一个能执行的function 对象</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">call_1</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 
+<p>2）使用<code>promise</code> </p>
+<p>​        如果多层回调函数嵌套，可以利用promise执行then 函数的特性，从而使回调函数的调用，根据可读性。具体使用方法， 是使用形成一个返回<code>promise</code> 对象的调用链，这样可以依次的执行回调函数，但是需要注意的是，因为是依次调用，所有，后面的回调函数，执行的位置，应该是当前异步函数内：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>( <span class="comment">// 1.</span></span><br><span class="line">                <span class="function"><span class="keyword">function</span> (<span class="params">call</span>) </span>&#123; <span class="comment">// 2.</span></span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">'f1 start - '</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123; <span class="comment">//3.</span></span><br><span class="line">                        <span class="built_in">console</span>.log(<span class="string">"f1 end - "</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                        call();</span><br><span class="line">                    &#125;, <span class="number">1000</span>);</span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">            );</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1. f1 返回 一个 promise 对象</span></span><br><span class="line"><span class="comment">// 2. 被返回的promise对象，直接实例化，所以会执行 2步骤中的函数，但是该函数中的call形参，是不被执行的</span></span><br><span class="line"><span class="comment">// 3. 模拟一个异步的任务，在实例 promise 对象时直接执行，步骤2 中的call，代表  步骤3执行完毕后，需要执行的回  //    调函数，所以应该放在 setTimeout 里面执行。如果 call() 的调用和setTimeout平级了，则变成了两个异步任务</span></span><br><span class="line"><span class="comment">//    一起执行，不能形成依次的调用</span></span><br></pre></td></tr></table></figure>
 
-# 检查并且显示MySQL相关安装包
-[root@localhost ~]# rpm -qa | grep mysql
+<p>完整的实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">            假设原始代码：</span></span><br><span class="line"><span class="comment">            setTimeout(</span></span><br><span class="line"><span class="comment">                setTimeout(</span></span><br><span class="line"><span class="comment">                    setTimeout(),2000</span></span><br><span class="line"><span class="comment">                ),1000</span></span><br><span class="line"><span class="comment">            )</span></span><br><span class="line"><span class="comment">            使用 setTimeout 来模拟一个异步的操作</span></span><br><span class="line"><span class="comment">            多个异步操作形成因果关系，必须一个执行完，才能触发以一个异步操作</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">       <span class="keyword">let</span> start = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</span><br><span class="line">       <span class="built_in">console</span>.log(start);</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(</span><br><span class="line">                <span class="function"><span class="keyword">function</span> (<span class="params">call</span>) </span>&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">'f1 start - '</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                        <span class="built_in">console</span>.log(<span class="string">"f1 end - "</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                        call();</span><br><span class="line">                    &#125;, <span class="number">1000</span>);</span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">call</span>) </span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'f2 start - '</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"f2 end - "</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                    call();</span><br><span class="line">                &#125;, <span class="number">2000</span>);</span><br><span class="line">                </span><br><span class="line">            &#125;)</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">f3</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">call</span>) </span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'f3 start - '</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"f3 end - "</span>+<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line">                    call();</span><br><span class="line">                &#125;, <span class="number">3000</span>);</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">        f1().then(f2).then(f3).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="string">"执行完毕"</span>)&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行结果：</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1565405073109</span></span><br><span class="line"><span class="comment">f1 start - 1565405073116</span></span><br><span class="line"><span class="comment">f1 end - 1565405074117</span></span><br><span class="line"><span class="comment">f2 start - 1565405074117</span></span><br><span class="line"><span class="comment">f2 end - 1565405076117</span></span><br><span class="line"><span class="comment">f3 start - 1565405076118</span></span><br><span class="line"><span class="comment">f3 end - 1565405079119</span></span><br><span class="line"><span class="comment">执行完毕</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-# 删除MySql
-[root@localhost ~]# yum remove -y mysql mysql mysql-server mysql-libs compat-mysql80
-或
-[root@localhost ~]# rpm -e mysql-community-libs-5.7.20-1.el7.x86_64 --nodeps
-或
-[root@localhost ~]# yum -y remove mysql-community-libs-5.7.20-1.el7.x86_64
-
-# 查看MySql相关文件
-[root@localhost ~]# find / -name mysql
-
-# 重启MySql服务
-[root@localhost ~]# service mysqld restart
-
-# 查看MySql版本
-[root@localhost ~]# yum repolist all | grep mysql
-
-# 查看当前的启动的 MySQL 版本
-[root@localhost ~]# yum repolist enabled | grep mysql
-
-# 通过Yum来安装MySQL,会自动处理MySQL与其他组件的依赖关系
-[root@localhost ~]# yum install mysql-community-server 
-
-# 查看MySQL安装目录
-[root@localhost ~]# whereis mysql 
-
-# 测试MySQL是否安装成功
-[root@localhost ~]# mysql 
-
-# 查看所有数据库用户
-mysql&gt;SELECT DISTINCT CONCAT(&apos;User: &apos;&apos;&apos;,user,&apos;&apos;&apos;@&apos;&apos;&apos;,host,&apos;&apos;&apos;;&apos;) AS query FROM mysql.user; 
-
-#修改用户密码
-mysql&gt;alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;XXX&apos;;</code></pre><p>——    vi /etc/my.cnf</p>
-<pre><code>[mysqld]
-character-set-server=utf8 
-
-[client]
-default-character-set=utf8 
-[mysql]
-default-character-set=utf8</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   安装Nginx</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>——    Windows</p>
-<pre><code>             启动
-             直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
-             关闭
-             nginx -s stop    或者    nginx -s quit
-             stop表示立即停止nginx,不保存相关信息
-             quit表示正常退出nginx,并保存相关信息
-             重启(因为改变了配置,需要重启)
-             nginx -s reload
-
-
-一、安装编译工具及库文件
-       yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
-
-二、首先要安装 PCRE
-       [root@bogon src]# cd /usr/local/src/
-       [root@bogon src]# wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
-
-         编译安装  
-         [root@bogon pcre-8.35]# ./configure
-         [root@bogon pcre-8.35]# make &amp;&amp; make install</code></pre><p>——    获取Nginx</p>
-<pre><code>       下载
-       [root@bogon src]# cd /usr/local/src/
-       [root@bogon src]# wget http://nginx.org/download/nginx-1.6.2.tar.gz
-
-       进入安装包目录编译安装
-       [root@bogon nginx-1.6.2]# ./configure --prefix=/usr/local/webserver/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.35
-       [root@bogon nginx-1.6.2]# make
-       [root@bogon nginx-1.6.2]# make install
-
-
-Nginx 配置
-
-               创建 Nginx 运行使用的用户 www：
-               [root@bogon conf]# /usr/sbin/groupadd www 
-               [root@bogon conf]# /usr/sbin/useradd -g www www
-
-               修改配置文件：
-               [root@bogon conf]#  /usr/local/webserver/nginx/conf/nginx.conf
-
-               检查配置文件nginx.conf的正确性命令： 
-               [root@bogon conf]# /usr/local/webserver/nginx/sbin/nginx -t
-
-启动 Nginx
-
-               Nginx 启动命令如下：
-               [root@bogon conf]# /usr/local/webserver/nginx/sbin/nginx
-
-
-
-Nginx 其他命令
-
-               以下包含了 Nginx 常用的几个命令：
-              /usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件
-              /usr/local/webserver/nginx/sbin/nginx -s reopen            # 重启 Nginx
-              /usr/local/webserver/nginx/sbin/nginx -s stop              # 停止 Nginx</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   配置PHP运行环境</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>获得php tar.gz 压缩包
-wget http://cn2.php.net/distributions/php-7.3.3.tar.gz</code></pre><hr>
-<pre><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm   
-rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
-
-
-sudo yum -y install php72w
-
-yum -y install php72w-cli php72w-common php72w-devel php72w-mysql
-
-
-对于wordpress应用，可能还需安装如下包：
-       sudo yum -y install php72w-gd php72w-imap php72w-ldap php72w-odbc php72w-pear php72w-xml php72w-xmlrpc
-
-
-php -v
-
-yum -y install php-mysql
-
-安装php连接MySQL依赖项
-
-
-卸载PHP
-       yum remove php
-
-查看全部软件包
-       rpm -qa|grep php
-
-
-优先卸载没有依赖项的文件
-       rpm -e </code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   安装SQLServer</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>1、下载 Microsoft SQL Server Red Hat 存储库配置文件：
-      sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
-
-2、sudo yum install -y mssql-server
-
-3、sudo /opt/mssql/bin/mssql-conf setup
-
-4、systemctl status mssql-server
-
-注：
-      如果需要授予远程登录，则开放1433端口
-
-
-安装 SQL Server 命令行工具
-
-
-1、下载 Microsoft Red Hat 存储库配置文件。
-      sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-
-2、sudo yum install -y mssql-tools unixODBC-devel
-
-3、echo &apos;export PATH=&quot;$PATH:/opt/mssql-tools/bin&quot;&apos; &gt;&gt; ~/.bash_profile
-     echo &apos;export PATH=&quot;$PATH:/opt/mssql-tools/bin&quot;&apos; &gt;&gt; ~/.bashrc
-     source ~/.bashrc
-
-
-
-
-
-                                               WINDOWS</code></pre><blockquote>
-<blockquote>
-<blockquote>
-<p>   7-Zip</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>   解压：<br>         7z x {fileName} -o{outputDirectory}</p>
-<p>   a      将文件添加到压缩档案中<br>   b      测试压缩或解压算法执行时的 CPU 占用<br>   d      从压缩档案中删除文件<br>   e      将压缩档案中的所有文件解压到指定路径，所有文件将输出到同一个目录中<br>   h      计算文件的哈希值<br>   i       显示有关支持格式的信息<br>   l       列出压缩档案的内容<br>   rn    重命名压缩档案中的文件<br>   t      测试压缩档案的完整性<br>   u     更新要进入压缩档案中的文件<br>   x     将压缩档案中的所有文件解压到指定路径，并包含所有文件的完整路径</p>
-<p>   压缩：<br>          7z a Images.7z C:\Users\Pisces\Desktop\Images* -mx9</p>
-<p>   压缩率：<br>          -mx0 仅存储不压缩（速度最快，无压缩，zip大小等同原始文件夹）<br>          -mx1 极速压缩<br>          -mx3 快速压缩<br>          -mx5 标准压缩<br>          -mx7 最大压缩<br>          -mx9 极限压缩 </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>   虚拟主机</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>ftp地址：dengjie9934.ftp-gz01.bcehost.com
-              182.61.12.199
-ftp端口：8010
-
-mysql -hb-0csmyvhyfumy6b.bch.rds.gz.baidubce.com -ub_0csmyvhyfumy6b -p
-
-
-地址：b-0csmyvhyfumy6b.bch.rds.gz.baidubce.com
-端口：3306
-用户名：b_0csmyvhyfumy6b
-密码：a93f764068eb4a0e9f77c434b8a64308
-数据库名：b_0csmyvhyfumy6b
-
-
-
-#文件名带有空格使用&quot;&quot;包含文件名即可
-
-#重置
-ssh-keygen -R xxx.xxx.xxx.xxx
-
-#创建新的文件
-echo. 文本内容&gt; 1.txt
-
-#重命名
-ren old_name new_name
-支持使用通配符
-
-#合并文件
-copy *.txt 合并文件.txt
-
-#移动文件或文件夹
-move 文件/文件夹 新路径</code></pre><hr>
-<pre><code>dir 显示目录和文件
-cd 进入目录
-del 删除文件
-rd 删除空目录（目录中不能有子目录和文件）
-deltree 删除目录并同时删除目录中的子目录以及文件
-rmdir  删除整个目录
-         好比说我要删除 222 这个目录下的所有目录和档案，这语法就是： 
-                  rmdir /s/q 222 
-         其中： 
-         /s 是代表删除所有子目录跟其中的档案。 
-         /q 是不要它在删除档案或目录时，不再问我 Yes or No 的动作。</code></pre><p>——    sftp常用命令<br>                         ls  查看当前目录下文件<br>                         help 查看sftp支持哪些命令<br>                         cd  指定目录<br>                         pwd 查看当前目录<br>                         get  xxx.txt 下载xxx文件<br>                         put  xxx.txt 上传xxx文件<br>                         mput 文件原名.tar.gz 上传到到服务器的文件名.tar.gz<br>                         quit / bye / exit 退出sftp<br>                         sftp  xxx.xxx.xxx.xxx   登录root用户<br>                         sftp <a href="mailto:zygf@xxx.xxx.xxx.xxx">zygf@xxx.xxx.xxx.xxx</a>  进行登录zygf用户<br>                         put -r [文件夹名称]/.  上传文件夹下子文件夹以及子文件夹下的所有文件</p>
-<p>——    常用的FTP命令<br>                          open：与服务器相连接<br>                          send(put)：上传文件<br>                          get：下载文件<br>                          mget：下载多个文件<br>                          cd：切换目录<br>                          dir(ls)：查看当前目录下的文件；<br>                          del：删除文件<br>                          bye(quit)：中断与服务器的连接</p>
+<p>如果 <code>promise</code> 对象操作的函数，在执行中发生了错误，可以使用<code>.catch</code> 方法，调用一个函数来执行。</p>
+<p>​    </p>
 
     
 
@@ -735,7 +543,7 @@ rmdir  删除整个目录
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wangzhiming1999.github.io/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wangzhiming1999.github.io/2020/01/10/js%E9%AB%98%E7%BA%A7%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -749,18 +557,18 @@ rmdir  删除整个目录
 
 <nav id="article-nav">
   
-    <a href="/2020/01/10/js%E9%AB%98%E7%BA%A7%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/01/10/juqrey%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          &#39;js高级进阶笔记&#39;
+          &#39;juqrey笔记&#39;
         
       </div>
     </a>
   
   
-    <a href="/2020/01/07/web%E7%AE%80%E5%8D%95%E7%9A%84sql%E6%B3%A8%E5%85%A5/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">web简单的sql注入</div>
+    <a href="/2020/01/07/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux命令总结</div>
       <i class="icon-circle-right"></i>
     </a>
   
